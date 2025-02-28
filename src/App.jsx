@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/navbar/Nav";
-import HomePage from "./routes/HomePage";
+import AboutPage from "./routes/about";
+import HomePage from "./routes/Home";
+
 
 const App = () => {
   return (
