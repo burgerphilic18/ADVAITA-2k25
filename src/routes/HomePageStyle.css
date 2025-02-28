@@ -1,0 +1,48 @@
+#homepage {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/herobig1.svg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .MainLogoDiv{
+    width:50%;
+  }
+  .MainLogoDiv img{
+    width:100%;
+  }
+  .DateBanner{
+    width:528px;
+    height:185px;
+  }
+
+  .vertical-iiit-text {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode:sideways-lr;
+    text-orientation: upright;
+    font-family: serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #F1CE89; 
+    text-transform: uppercase;
+    line-height: 1.2;
+    z-index: 100;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin:30px;
+  }
