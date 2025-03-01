@@ -1,93 +1,169 @@
-*{
-    margin:none;
-    padding: none;
-}
-#aboutPage{
-    width:100%;
-    height:100vh;
-    background: linear-gradient(#1A1F20,#002348);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #aboutPage {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#1A1F20, #002348);
     display: flex;
-    align-items:  center;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
-
-}
-.theme-div{
-    width:70%;
-    border-inline: 3px  solid #97804F;
+    padding: 20px;
+  }
+  
+  /* Theme Section */
+  .theme-div {
+    width: 80%;
+    max-width: 900px;
+    border-inline: 3px solid #97804F;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:fit-content;
-    background: linear-gradient(90deg,#0B1720,#2E6086,#001731);
-}
-.theme-div h2{
-    font-size: 71px;
-    margin: 0px 0px;
-    padding: none;
-    color:#F1CE89;
-}
-.theme-div p{
-    font-size:31px;
-    line-height: 37.52px;
-    color:#ffffff;
+    height: fit-content;
+    padding: 20px;
+    background: linear-gradient(90deg, #0B1720, #2E6086, #001731);
+  }
+  
+  .theme-div h2 {
+    font-size: 60px;
+    color: #F1CE89;
+    text-align: center;
+  }
+  
+  .theme-div p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #ffffff;
     text-align: center;
     padding-inline: 10px;
-}
-.about-div{
-    width:85%;
-    height:fit-content;
-    background:transparent ;
-}
-.about-div-heading{
+  }
+  
+  /* About Section */
+  .about-div {
+    width: 85%;
+    max-width: 1000px;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .about-div-heading {
     display: flex;
     align-items: center;
-    
-}
-.special-el{
-    width:fit-content;
-    height:50px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.special-el img{
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .special-el {
+    width: fit-content;
+    height: 50px;
+  }
+  
+  .special-el img {
     object-fit: cover;
-    width:100%;
-    height:100%;
-    
-
-}
-.about-div-heading h2{
-    font-size: 54px;
-    line-height:69.77px ;
-    color:#EFAF32;
-    margin: 0px 0px;
-    margin-top: 30px;
-}
-.about-div-heading span{
-    font-size: 101px;
-    line-height:101.3px ;
-    color:#F1CE89;
-}
-.about-div p{
-    color:#ffffff;
-    font-size: 31px;
-    line-height: 37.52px;
-    margin: 0px 0px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-div-heading h2 {
+    font-size: 42px;
+    color: #EFAF32;
+  }
+  
+  .about-div-heading span {
+    font-size: 80px;
+    color: #F1CE89;
+  }
+  
+  .about-div p {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.4;
     margin-top: 10px;
-}
-
-.about-btns{
-    margin-bottom: 40px;
+  }
+  
+  /* Buttons */
+  .about-btns {
     display: flex;
-    gap:25px;
-    margin-left: 30vw;
-}
-
-.about-btns button{
-    background-color:#F1CE89;
-    border:3px solid #97804F;
-    font-size: 31px;
-    line-height: 40px;
-    padding: 17px 35px;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .about-btns button {
+    background-color: #F1CE89;
+    border: 3px solid #97804F;
+    font-size: 24px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .about-btns button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .theme-div h2 {
+      font-size: 50px;
+    }
+  
+    .theme-div p {
+      font-size: 20px;
+    }
+  
+    .about-div-heading h2 {
+      font-size: 36px;
+    }
+  
+    .about-div-heading span {
+      font-size: 60px;
+    }
+  
+    .about-div p {
+      font-size: 20px;
+    }
+  
+    .about-btns button {
+      font-size: 20px;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .theme-div h2 {
+      font-size: 40px;
+    }
+  
+    .theme-div p {
+      font-size: 18px;
+    }
+  
+    .about-div-heading h2 {
+      font-size: 28px;
+    }
+  
+    .about-div-heading span {
+      font-size: 50px;
+    }
+  
+    .about-div p {
+      font-size: 18px;
+    }
+  
+    .about-btns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-btns button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  }
+  
