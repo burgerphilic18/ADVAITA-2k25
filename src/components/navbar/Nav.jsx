@@ -1,6 +1,7 @@
 import React from "react";
+import AdvaitaWhite from "../../assets/advaita-white.svg";
 import "./Navbar.css"; 
-import AdvaitaWhite from "../../assets/advaita-white.svg"
+
 
 const Navbar = () => {
   return (
