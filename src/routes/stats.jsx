@@ -18,7 +18,7 @@ const StatsPage = ({ statistics = [] }) => {
   const stats = statistics.length > 0 ? statistics : defaultStats;
 
     return (
-      <div id="statspage">
+      <div id="statspage" >
         
         
         <div className="stats-head">
