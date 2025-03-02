@@ -13,7 +13,7 @@ html, body, #root, .App {
 .gallery-container {
   background: linear-gradient(to bottom, #0C6F76, #06464A);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 20px 5%;
   font-family: 'Times New Roman', serif;
