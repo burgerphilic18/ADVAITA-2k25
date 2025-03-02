@@ -28,24 +28,24 @@ const Navbar = () => {
 
   return (
     <nav id="navbar">
-      {/* Menu Left */}
+      
       <div className={`nav-links left ${menuOpen ? 'active' : ''}`}> 
         <a href="#events">EVENTS</a>
         <a href="#sponsors">SPONSORS</a>
       </div>
 
-      {/* Center Logo */}
+      
       <div className="logo">
         <img src={AdvaitaWhite} alt="Advaita" />
       </div>
 
-      {/* Menu Right */}
+      
       <div className={`nav-links right ${menuOpen ? 'active' : ''}`}>
         <a href="#contact">CONTACT</a>
         <a href="#register">REGISTER</a>
       </div>
 
-      {/* Mobile Menu Toggle */}
+    
       <div className="menu-toggle" onClick={toggleMenu}>
         <div className={`hamburger ${menuOpen ? 'active' : ''}`}>
           <span></span>

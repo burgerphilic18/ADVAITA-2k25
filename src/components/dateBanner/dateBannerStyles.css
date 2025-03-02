@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 .date-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.date-banner {
   position: absolute;
   width: 430px;
   height: 160px;
@@ -97,7 +107,18 @@
 /* Responsive for small screens */
 @media (max-width: 600px) {
   .date-banner {
-      font-size: 14px;
-      padding: 8px;
+    margin:0px 0px;
+    padding: 0px 0px;
+    width:250px;
+  }
+  .date-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    
+    z-index: 1;
   }
 }
