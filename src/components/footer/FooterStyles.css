@@ -228,3 +228,22 @@
   .social-icon:hover {
     color: #fff;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20232a;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

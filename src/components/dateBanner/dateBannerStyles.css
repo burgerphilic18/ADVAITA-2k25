@@ -1,6 +1,7 @@
 *{
-  margin:none;
-  padding: none;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .date-banner {
   position: absolute;
@@ -79,4 +80,24 @@
 
 .diamond.right {
   right: 100px;
+}
+
+
+.date-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .date-banner {
+      font-size: 14px;
+      padding: 8px;
+  }
 }

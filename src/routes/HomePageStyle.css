@@ -1,52 +1,123 @@
-*{
-  margin:none;
-  padding: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#homepage {
-    width: 100%;
-    height: 100vh;
-    background: url("../assets/herobig1.svg") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .content {
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .MainLogoDiv{
-    width:50%;
-  }
-  .MainLogoDiv img{
-    width:100%;
-  }
-  .DateBanner{
-    width:528px;
-    height:185px;
-  }
 
-  .vertical-iiit-text {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    writing-mode:sideways-lr;
-    text-orientation: upright;
-    font-family: serif;
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #F1CE89; 
-    text-transform: uppercase;
-    line-height: 1.2;
-    z-index: 100;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin:30px;
+#homepage {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/herobig1.svg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.MainLogoDiv {
+  width: 50%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.MainLogoDiv img {
+  width: 100%;
+}
+
+.DateBanner {
+  width: 528px;
+  height: 185px;
+  max-width: 90%;
+}
+
+.vertical-iiit-text {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: sideways-lr;
+  text-orientation: upright;
+  font-family: serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #F1CE89; 
+  text-transform: uppercase;
+  line-height: 1.2;
+  z-index: 10;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 992px) {
+  .MainLogoDiv {
+    width: 60%;
   }
+  
+  .vertical-iiit-text {
+    font-size: 24px;
+    letter-spacing: 2px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainLogoDiv {
+    width: 70%;
+  }
+  
+  .vertical-iiit-text {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    right: 5px;
+  }
+  
+  .DateBanner {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .MainLogoDiv {
+    width: 85%;
+  }
+  
+  .vertical-iiit-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    right: 2px;
+    margin: 15px;
+  }
+  
+  .DateBanner {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .MainLogoDiv {
+    width: 90%;
+  }
+  
+  .vertical-iiit-text {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 10px;
+  }
+  
+  .DateBanner {
+    transform: scale(0.7);
+  }
+}
