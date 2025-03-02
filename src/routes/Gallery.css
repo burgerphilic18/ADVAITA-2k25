@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -21,6 +20,7 @@ html, body, #root, .App {
   overflow: auto;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Header styling */
@@ -28,10 +28,16 @@ html, body, #root, .App {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   flex-shrink: 0;
 }
+.Gallerybanners{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-right: 30px;
 
+}
 .logo-container {
   display: flex;
   align-items: center;

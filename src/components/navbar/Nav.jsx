@@ -54,9 +54,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden relative z-50 flex items-center mr-4  ">
+      <div className="md:hidden relative z-50 flex items-center   ">
       <button onClick={toggleMenu} className="focus:outline-none">
-      <div className="w-8 h-6 flex flex-col justify-between ">
+      <div className="w-8 h-6 flex flex-col justify-between  mr-16 menuBar">
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>

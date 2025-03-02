@@ -1,5 +1,6 @@
 import React from 'react';
 import './Gallery.css';
+import pngWing from "../assets/pngwing.com.svg";
 
 const Gallery = () => {
   return (
@@ -10,11 +11,8 @@ const Gallery = () => {
           <div className="logo-diamond"></div>
           <h1 className="gallery-title">Gallery</h1>
         </div>
-        <div className="banners">
-          <div className="banner red"></div>
-          <div className="banner yellow"></div>
-          <div className="banner blue"></div>
-          <div className="banner green"></div>
+        <div className="Gallerybanners">
+          <img src={pngWing}/>
         </div>
       </header>
 
