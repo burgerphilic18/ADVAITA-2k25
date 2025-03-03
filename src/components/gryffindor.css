@@ -23,4 +23,9 @@
     color: white;
     font-size: 28px;
   }
-  
+@media (max-width:768px){
+    .gryffindor-overlay-text {
+        display: none;
+    }
+
+}

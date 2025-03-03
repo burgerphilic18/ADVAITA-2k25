@@ -322,6 +322,7 @@
     padding: 0.4rem 1rem; /* Further reduced padding */
     font-size: calc(12px + 0.4vw); /* Further reduced font size */
   }
+  
 }
 
 @media (min-width: 1201px) {
@@ -453,5 +454,13 @@
     max-width: 450px; /* Further reduced max-width */
     margin-left: auto;
     margin-right: auto;
+    
   }
+}
+@media (max-width:600px){
+  .contact-form-foot{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
