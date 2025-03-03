@@ -27,21 +27,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-5 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center">
+    <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-2 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center">
       {/* Menu Left */}
-      <div className="hidden md:flex items-center gap-[5vw] lg:gap-[7vw] xl:gap-[9vw] flex-1 justify-end "> 
+      <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end "> 
         <a href="#events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</a>
         <a href="#sponsors"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">SPONSORS</a>
+        <a href="#contact"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">CONTACT</a>
       </div>
 
       {/* Center Logo */}
-      <div className="flex items-center justify-center flex-1">
+      <div className="flex items-center justify-center flex-1 nav-logo1">
         <img src={AdvaitaWhite} alt="Advaita"className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300" />
       </div>
 
       {/* Menu Right */}
-      <div className="hidden md:flex items-center gap-[5vw] lg:gap-[7vw] xl:gap-[9vw] flex-1 justify-start ">
-        <a href="#contact"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">CONTACT</a>
+      <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-start ">
+        <a href="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</a>
+        <a href="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="#register"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">REGISTER</a>
       </div>
 
@@ -50,13 +52,15 @@ const Navbar = () => {
         <a href="#events" className="text-2xl hover:opacity-80 transition-opacity">EVENTS</a>
         <a href="#sponsors" className="text-2xl hover:opacity-80 transition-opacity">SPONSORS</a>
         <a href="#contact" className="text-2xl hover:opacity-80 transition-opacity">CONTACT</a>
+        <a href="/" className="text-2xl hover:opacity-80 transition-opacity">MERCH</a>
+        <a href="/" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="#register" className="text-2xl hover:opacity-80 transition-opacity">REGISTER</a>
       </div>
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden relative z-50 flex items-center   ">
       <button onClick={toggleMenu} className="focus:outline-none">
-      <div className="w-8 h-6 flex flex-col justify-between  mr-16 menuBar">
+      <div className="w-8 h-6 flex flex-col justify-between  mr-4 menuBar">
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
             <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>

@@ -33,6 +33,7 @@ const ImageCarousel = () => {
 
   return (
     <div className="carousel-container">
+      
       <button className="nav-button prev-button" onClick={handlePrev}>
         &lt;
       </button>

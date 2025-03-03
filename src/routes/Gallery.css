@@ -10,9 +10,10 @@ html, body, #root, .App {
 }
 
 .gallery-container {
-  background: linear-gradient(to bottom, #0C6F76, #06464A);
+  
   width: 100%;
   min-height: 100vh;
+  
   margin: 0;
   padding: 20px 5%;
   font-family: 'Times New Roman', serif;
@@ -20,9 +21,16 @@ html, body, #root, .App {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, #247F91 10%, #0F3F53 50%);
 
 }
-
+.hat-gallery{
+  position: absolute;
+  bottom:0;
+  right:0;
+  transform: translateY(50%);
+  z-index: 20;
+}
 /* Header styling */
 .gallery-header {
   display: flex;
@@ -36,6 +44,12 @@ html, body, #root, .App {
   top:0;
   right:0;
   margin-right: 30px;
+  height:fit-content;
+  width:fit-content;
+}
+.Gallerybanners img{
+  height:100%;
+  width:100%;
 
 }
 .logo-container {
@@ -151,31 +165,24 @@ html, body, #root, .App {
 }
 
 .gallery-button {
-  background-color: #f2d78e;
+  background-color: #F1CE89;
   border: none;
   padding: 10px 30px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  
 }
-
+.gallery-button button{
+  color:#000000;
+}
 .gallery-button:hover {
   background-color: #0b005c;
   color: #fff;
 }
 
-/* Decorative element at bottom right */
-.gallery-container::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 70px;
-  background-color: #563c28;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
-}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -203,6 +210,15 @@ html, body, #root, .App {
   
   .gallery-button {
     width: 80%;
+    
+  }
+  .Gallerybanners{
+    width:150px;
+  }
+}
+@media (max-width:450px){
+  .Gallerybanners{
+    width:100px;
   }
 }
 

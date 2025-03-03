@@ -2,9 +2,11 @@ import React from 'react';
 import './Gallery.css';
 import pngWing from "../assets/pngwing.com.svg";
 
+
 const Gallery = () => {
   return (
     <div className="gallery-container">
+      
       {/* Header with logo and banners */}
       <header className="gallery-header">
         <div className="logo-container">

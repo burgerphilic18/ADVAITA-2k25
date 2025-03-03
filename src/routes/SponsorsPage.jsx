@@ -1,9 +1,13 @@
 import React from 'react';
 import './SponsorsPage.css';
+import hat from  "../assets/hat-1.svg";
 
 const SponsorsPage = () => {
   return (
     <div className="sponsors-page">
+      <div className='hat-sponsors'>
+        <img src={hat}></img>
+      </div>
       <div className="sponsors-header">
         <div className="sponsors-title-container">
           <div className="sponsors-title-decoration">❖</div>

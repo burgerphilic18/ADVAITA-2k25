@@ -9,6 +9,8 @@ import SponsorsPage from './routes/SponsorsPage';
 import ProNightsHeader from './routes/ProNightsHeader';
 import ImageCarousel from './routes/ImageCarousel';
 import Footer from "./components/footer/Footer";
+import Owl from  "./assets/bird-1.svg";
+
 
 const App = () => {
   return (
@@ -20,6 +22,9 @@ const App = () => {
       <Gallery />
       <SponsorsPage />
       <div className="app-container">
+        <div className='owl'>
+          <img src={Owl}></img>
+        </div>
         <ProNightsHeader />
         <div className="carousel-section">
           <ImageCarousel />

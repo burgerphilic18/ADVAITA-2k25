@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
 }
 
@@ -145,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .Broom-right {
     transform: translateX(30%) translateY(-48%)  scale(0.5);
   }

@@ -5,7 +5,17 @@
   position: relative;
   overflow: hidden;
 }
-
+.hat-sponsors{
+  position: absolute;
+  top:0;
+  right:0;
+ 
+  z-index: 20;
+}
+.hat-sponsors img{
+  height:100%;
+  width:100%;
+}
 .sponsors-header {
   margin-bottom: 3rem;
 }
@@ -92,7 +102,7 @@
 .sponsors-page::after {
   content: '';
   position: absolute;
-  background: url('/wizard-hat.png') no-repeat;
+  
   background-size: contain;
   width: 150px;
   height: 150px;
@@ -118,8 +128,12 @@
   }
   
   .medium {
-    width: 250px;
-    height: 150px;
+    width: 125px;
+    height: 75px;
+  }
+  .hat-sponsors{
+    
+    height:50px;
   }
 }
 
