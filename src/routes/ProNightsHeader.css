@@ -3,15 +3,19 @@
   margin-bottom: 30px;
   
 }
-
+@font-face {
+  font-family: 'HarryPotter';
+  src: url('./src/fonts/HARRYP__.TTF') format('truetype');
+}
 .title {
   font-family: 'Cinzel Decorative', cursive, serif;
-  font-size: 3rem;
+  font-size: 80px;
   color: #e4c87e;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 2px;
   display: inline-block;
   position: relative;
+  font-family: 'HarryPotter';
 }
 
 .title::before,

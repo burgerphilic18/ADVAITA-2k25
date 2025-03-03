@@ -8,7 +8,10 @@ html, body, #root, .App {
   height: 100%;
   overflow: auto;
 }
-
+@font-face {
+  font-family: 'HarryPotter';
+  src: url('../src/fonts/HARRYP__.TTF') format('truetype');
+}
 .gallery-container {
   
   width: 100%;
@@ -22,15 +25,9 @@ html, body, #root, .App {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, #247F91 10%, #0F3F53 50%);
+  
+}
 
-}
-.hat-gallery{
-  position: absolute;
-  bottom:0;
-  right:0;
-  transform: translateY(50%);
-  z-index: 20;
-}
 /* Header styling */
 .gallery-header {
   display: flex;
@@ -38,6 +35,7 @@ html, body, #root, .App {
   align-items: center;
   margin-bottom: 40px;
   flex-shrink: 0;
+  
 }
 .Gallerybanners{
   position: absolute;
@@ -67,11 +65,13 @@ html, body, #root, .App {
 
 .gallery-title {
   color: #e9c868;
-  font-size: 3rem;
+  font-size: 90px;
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  margin: 0;
+  padding: 0px 0px;
+  margin: 0px 0px;
   letter-spacing: 1px;
+  font-family: 'HarryPotter';
+
 }
 
 .banners {
