@@ -24,7 +24,7 @@ html, body, #root, .App {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #247F91 10%, #0F3F53 50%);
+  background: linear-gradient(to bottom,#101c24, #247F91, #101c24);
   
 }
 
