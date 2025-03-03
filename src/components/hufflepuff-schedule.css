@@ -1,0 +1,119 @@
+.hufflepuff-b{
+  background: rgb(108, 88, 26);
+}
+
+.hufflepuff-events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 103.95px;
+    column-gap: 94px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.hufflepuff-event-card {
+    display: flex;
+    background-color: #2D2409;
+    border-radius: 70px;
+    overflow: hidden;
+    border: 3px solid #EFAF32;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hufflepuff-event-card.reveal {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.hufflepuff-event-image {
+    height: 368px;
+    width: 457.88px;
+    padding: 34.98px;
+}
+  
+.hufflepuff-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+  
+.hufflepuff-event-details {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.hufflepuff-event-title {
+    font-size: 1.5rem;
+    color: #EFAF32;
+    font-family: Joan, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+  
+.hufflepuff-event-venue, .hufflepuff-event-time, .hufflepuff-event-date {
+    font-family: Joan, serif;
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #EFAF32;
+}
+
+.hufflepuff-event-venue{
+    margin-bottom: 100px;
+    color: #F1CE89;
+}
+
+.hufflepuff-event-date{
+    font-size: 25px;
+}
+
+.hufflepuff-event-info {
+    position: relative;
+}
+
+.hufflepuff-event-hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; 
+    padding: 20px; 
+    opacity: 0;
+    transition: opacity 0.5s ease, backdrop-filter 0.2s ease;
+    backdrop-filter: blur(0);
+}
+
+.hufflepuff-event-info:hover .hufflepuff-event-hover-content {
+    opacity: 1;
+    backdrop-filter: blur(10px); 
+}
+
+.hufflepuff-event-description {
+    margin-bottom: 10px;
+}
+
+.hufflepuff-register-button {
+    background-color: #EFAF32; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "HarryPotter";
+    src: url("/HARRYP_.TTF") format('truetype');
+}
+
+.download-button{
+    color: #97804F;
+}
+
+.download-button:hover{
+    color: #EFAF32;
+}
+
+*{
+    margin:none;
+    padding: none;
+}
+
+.events-home {
+    width: 100%;
+    height: 100vh;
+    background: url("/events-home.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+
+.event-text{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 1000;
+    color: #EFAF32;
+    font-family: "HarryPotter", serif;
+    margin-bottom: -10px;
+}
+
+.second-text{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Joan, serif;
+    color: #EFAF32;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgba(4, 5, 4, 5);
+}
+
+.vertical-text {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode:sideways-lr;
+    text-orientation: upright;
+    font-family: joan, serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #EFAF32;
+    text-transform: uppercase;
+    z-index: 100;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin:30px;
+    white-space: nowrap;
+}
+
+.download {
+    color: #97804F;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    border-radius: 8px;
+    background: radial-gradient(
+    circle at center,
+    #004797 0%,     
+    #023B7B 50%,   
+    #012247 100%    
+    );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    bottom:-75px;
+    margin-bottom: 30px;
+    border:3px solid #97804F;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Joan, serif;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.download:hover, .download:active {
+    box-shadow: 0 0 20px rgba(239, 175, 50, 0.8);
+    transform: scale(1.1);
+}

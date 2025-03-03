@@ -1,7 +1,7 @@
 // Footer.jsx
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import AdvaitaWhite from "../../assets/advaita-white.svg"
+import AdvaitaWhite from "/advaita-white.svg"
 import './FooterStyles.css';
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="logo-section">
           <div className="foot-links">
-            <a href="events">Events</a>
+            <a href="/">Home</a>
             <a href="#sponsors">Sponsors</a>
             <a href="#register">Register</a>
           </div>

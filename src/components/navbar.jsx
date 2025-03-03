@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import AdvaitaWhite from "../../assets/advaita-white.svg";
+import AdvaitaWhite from "/advaita-white.svg";
+import "./navbar.css"; 
 
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
     <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-2 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center">
       {/* Menu Left */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end "> 
-        <a href="events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</a>
+        <a href="/" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">HOME</a>
         <a href="#sponsors"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">SPONSORS</a>
         <a href="#contact"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">CONTACT</a>
       </div>

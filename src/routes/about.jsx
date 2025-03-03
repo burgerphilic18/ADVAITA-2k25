@@ -22,7 +22,7 @@ const AboutPage = () => {
         
       </div>
       <div className="about-btns">
-        <a><button className="schedule-btn">EVENTS SCHEDULE</button></a>
+        <a href="events"><button className="schedule-btn">EVENTS SCHEDULE</button></a>
         <a><button className="register-btn">REGISTER</button></a>
 
       </div>

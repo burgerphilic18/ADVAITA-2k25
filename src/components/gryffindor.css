@@ -1,0 +1,26 @@
+.gryffindor-background {
+    width: 100%;
+    height: 100vh;
+    background: url("/gryffindor.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+  
+.gryffindor-overlay-text {
+    font-family: Joan, serif;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-left: 12%;
+    padding-right: 53%;
+    color: white;
+    font-size: 28px;
+  }
+  
