@@ -106,11 +106,11 @@ const RavenclawSchedule = () => {
                 <p className="ravenclaw-event-venue">Venue: {event.venue}</p>
                 <p className="ravenclaw-event-date">{event.date}</p>
                 <p className="ravenclaw-event-time">{event.time}</p>
-                <div className="ravenclaw-event-hover-content">
-                  <p className="ravenclaw-event-description">Description of the event goes here.</p>
-                  <button className="ravenclaw-register-button">Register</button>
-                </div>
               </div>
+            </div>
+            <div className="ravenclaw-event-hover-content">
+              <p className="ravenclaw-event-description">Description of the event goes here.</p>
+              <button className="ravenclaw-register-button">Register</button>
             </div>
           </div>
         ))}

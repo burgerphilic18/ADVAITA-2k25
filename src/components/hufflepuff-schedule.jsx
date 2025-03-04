@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./hufflepuff-schedule.css";
 
-const hufflepuff_schedule = () => {
+const Hufflepuff_Schedule = () => {
     const events = [
         {
           id: 1,
@@ -106,11 +106,11 @@ const hufflepuff_schedule = () => {
                 <p className="hufflepuff-event-venue">Venue: {event.venue}</p>
                 <p className="hufflepuff-event-date">{event.date}</p>
                 <p className="hufflepuff-event-time">{event.time}</p>
-                <div className="hufflepuff-event-hover-content">
-                  <p className="hufflepuff-event-description">Description of the event goes here.</p>
-                  <button className="hufflepuff-register-button">Register</button>
-                </div>
               </div>
+            </div>
+            <div className="hufflepuff-event-hover-content">
+              <p className="hufflepuff-event-description">Description of the event goes here.</p>
+              <button className="hufflepuff-register-button">Register</button>
             </div>
           </div>
         ))}
@@ -119,4 +119,4 @@ const hufflepuff_schedule = () => {
     );
 };
 
-export default hufflepuff_schedule;
+export default Hufflepuff_Schedule;
