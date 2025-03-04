@@ -1,23 +1,19 @@
-document.addEventListener('mousemove', function (e) {
-  const sparkle = document.createElement('div');
-  sparkle.className = 'sparkle trail';
-  sparkle.style.left = `${e.pageX}px`;
-  sparkle.style.top = `${e.pageY}px`;
-  document.body.appendChild(sparkle);
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Events from "./events";
+import "./sparkles.js";
+import "./cursor.css";
 
-  setTimeout(() => {
-    sparkle.remove();
-  }, 500);
-});
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+      </Routes>
+    </Router>
+  );
+};
 
-document.addEventListener('click', function (e) {
-  const sparkle = document.createElement('div');
-  sparkle.className = 'sparkle click';
-  sparkle.style.left = `${e.pageX}px`;
-  sparkle.style.top = `${e.pageY}px`;
-  document.body.appendChild(sparkle);
-
-  setTimeout(() => {
-    sparkle.remove();
-  }, 1000);
-});
+export default App;
