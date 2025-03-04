@@ -1,234 +1,248 @@
 .hufflepuff-b {
-    background: rgb(108, 88, 26);
-    padding: 20px 0;
-  }
-  
+  background: rgb(108, 88, 26);
+  padding: 20px 0;
+}
+
+.hufflepuff-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 103.95px;
+  column-gap: 94px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hufflepuff-event-card {
+  position: relative;
+  display: flex;
+  background-color: #2D2409;
+  border-radius: 70px;
+  overflow: hidden;
+  opacity: 0;
+  border: 3px solid #EFAF32;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hufflepuff-event-card.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hufflepuff-event-card:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.hufflepuff-event-card:hover .hufflepuff-event-hover-content {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hufflepuff-event-image {
+  height: 368px;
+  width: 457.88px;
+  padding: 34.98px;
+}
+
+.hufflepuff-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.hufflepuff-event-details {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hufflepuff-event-title {
+  font-size: 1.5rem;
+  color: #EFAF32;
+  font-family: Joan, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hufflepuff-event-venue, .hufflepuff-event-time, .hufflepuff-event-date {
+  font-family: Joan, serif;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #EFAF32;
+}
+
+.hufflepuff-event-venue {
+  margin-bottom: 100px;
+}
+
+.hufflepuff-event-date {
+  font-size: 25px;
+}
+
+.hufflepuff-event-info {
+  position: relative;
+}
+
+.hufflepuff-event-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hufflepuff-event-description {
+  align-self: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+}
+
+.hufflepuff-register-button {
+  background-color: #EFAF32;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #2D2409;
+  border-radius: 5px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .hufflepuff-events-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 103.95px;
-    column-gap: 94px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px;
+    column-gap: 60px;
+    row-gap: 80px;
   }
-  
-  .hufflepuff-event-card {
-    display: flex;
-    background-color: #2D2409;
-    border-radius: 70px;
-    overflow: hidden;
-    border: 3px solid #EFAF32;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .hufflepuff-event-card.reveal {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
+
   .hufflepuff-event-image {
-    height: 368px;
-    width: 457.88px;
-    padding: 34.98px;
+    height: 320px;
+    width: 400px;
+    padding: 25px;
   }
-  
-  .hufflepuff-event-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .hufflepuff-event-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hufflepuff-events-grid {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    padding: 25px;
+  }
+
+  .hufflepuff-event-card {
     border-radius: 50px;
   }
-  
-  .hufflepuff-event-details {
-    width: 60%;
+
+  .hufflepuff-event-image {
+    height: 300px;
+    width: 350px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-  
+
   .hufflepuff-event-title {
-    color: #EFAF32;
-    font-family: Joan, serif;
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-size: 24px;
   }
-  
-  .hufflepuff-event-venue, .hufflepuff-event-time, .hufflepuff-event-date {
-    font-family: Joan, serif;
-    margin: 5px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #EFAF32;
+
+  .hufflepuff-event-venue, .hufflepuff-event-time {
+    font-size: 18px;
   }
-  
-  .hufflepuff-event-venue {
-    margin-bottom: 100px;
-    color: #F1CE89;
-  }
-  
+
   .hufflepuff-event-date {
-    font-size: 25px;
+    font-size: 22px;
   }
-  
-  .hufflepuff-event-info {
-    position: relative;
-  }
-  
-  .hufflepuff-event-hover-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    display: flex;
+}
+
+@media (max-width: 768px) {
+  .hufflepuff-event-card {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease, backdrop-filter 0.2s ease;
-    backdrop-filter: blur(0);
+    border-radius: 40px;
   }
-  
-  .hufflepuff-event-info:hover .hufflepuff-event-hover-content {
-    opacity: 1;
-    backdrop-filter: blur(10px);
+
+  .hufflepuff-event-image {
+    width: 100%;
+    height: 250px;
+    padding: 20px 20px 10px 20px;
   }
-  
-  .hufflepuff-event-description {
-    margin-bottom: 10px;
+
+  .hufflepuff-event-details {
+    width: 100%;
+    padding: 0 20px 20px 20px;
   }
-  
-  .hufflepuff-register-button {
-    background-color: #EFAF32;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+
+  .hufflepuff-event-venue {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hufflepuff-events-grid {
+    padding: 15px;
+    row-gap: 40px;
+  }
+
+  .hufflepuff-event-card {
+    border-radius: 30px;
+    border-width: 2px;
+  }
+
+  .hufflepuff-event-image {
+    height: 200px;
+    padding: 15px 15px 10px 15px;
+  }
+
+  .hufflepuff-event-image img {
+    border-radius: 25px;
+  }
+
+  .hufflepuff-event-title {
+    font-size: 20px;
+  }
+
+  .hufflepuff-event-venue, .hufflepuff-event-time {
     font-size: 16px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #2D2409;
-    border-radius: 5px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .hufflepuff-events-grid {
-      padding: 30px;
-      column-gap: 60px;
-      row-gap: 80px;
-    }
-    
-    .hufflepuff-event-image {
-      height: 320px;
-      width: 400px;
-      padding: 25px;
-    }
-    
-    .hufflepuff-event-title {
-      font-size: 26px;
-    }
+
+  .hufflepuff-event-date {
+    font-size: 18px;
   }
-  
-  @media (max-width: 992px) {
-    .hufflepuff-events-grid {
-      grid-template-columns: 1fr;
-      row-gap: 60px;
-      padding: 25px;
-    }
-    
-    .hufflepuff-event-card {
-      border-radius: 50px;
-    }
-    
-    .hufflepuff-event-image {
-      height: 300px;
-      width: 350px;
-      padding: 20px;
-    }
-    
-    .hufflepuff-event-title {
-      font-size: 24px;
-    }
-    
-    .hufflepuff-event-venue, .hufflepuff-event-time {
-      font-size: 18px;
-    }
-    
-    .hufflepuff-event-date {
-      font-size: 22px;
-    }
+
+  .hufflepuff-event-venue {
+    margin-bottom: 30px;
   }
-  
-  @media (max-width: 768px) {
-    .hufflepuff-event-card {
-      flex-direction: column;
-      border-radius: 40px;
-    }
-    
-    .hufflepuff-event-image {
-      width: 100%;
-      height: 250px;
-      padding: 20px 20px 10px 20px;
-    }
-    
-    .hufflepuff-event-details {
-      width: 100%;
-      padding: 0 20px 20px 20px;
-    }
-    
-    .hufflepuff-event-venue {
-      margin-bottom: 50px;
-    }
+
+  .hufflepuff-register-button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
-  
-  @media (max-width: 576px) {
-    .hufflepuff-events-grid {
-      padding: 15px;
-      row-gap: 40px;
-    }
-    
-    .hufflepuff-event-card {
-      border-radius: 30px;
-      border-width: 2px;
-    }
-    
-    .hufflepuff-event-image {
-      height: 200px;
-      padding: 15px 15px 10px 15px;
-    }
-    
-    .hufflepuff-event-image img {
-      border-radius: 25px;
-    }
-    
-    .hufflepuff-event-title {
-      font-size: 20px;
-    }
-    
-    .hufflepuff-event-venue, .hufflepuff-event-time {
-      font-size: 16px;
-    }
-    
-    .hufflepuff-event-date {
-      font-size: 18px;
-    }
-    
-    .hufflepuff-event-venue {
-      margin-bottom: 30px;
-    }
-    
-    .hufflepuff-register-button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  }
+}

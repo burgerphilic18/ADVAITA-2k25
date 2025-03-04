@@ -1,234 +1,241 @@
 .gryffindor-b {
-    background: linear-gradient(to bottom, rgb(23, 0, 0), rgb(58, 16, 16));
-    padding: 20px 0;
-  }
-  
+  background: linear-gradient(to bottom, rgb(23, 0, 0), rgb(58, 16, 16));
+  padding: 20px 0;
+}
+
+.gryffindor-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 103.95px;
+  column-gap: 94px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gryffindor-event-card {
+  position: relative;
+  display: flex;
+  background-color: #1D0902;
+  border-radius: 70px;
+  overflow: hidden;
+  opacity: 0;
+  border: 3px solid #97804F;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gryffindor-event-card.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gryffindor-event-card:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.gryffindor-event-card:hover .gryffindor-event-hover-content {
+  opacity: 1;
+  z-index: 2;
+}
+
+.gryffindor-event-image {
+  height: 368px;
+  width: 457.88px;
+  padding: 34.98px;
+}
+
+.gryffindor-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.gryffindor-event-details {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gryffindor-event-title {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Joan, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.gryffindor-event-venue, .gryffindor-event-time, .gryffindor-event-date {
+  font-family: Joan, serif;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.gryffindor-event-venue {
+  margin-bottom: 100px;
+}
+
+.gryffindor-event-date {
+  font-size: 25px;
+}
+
+.gryffindor-event-info {
+  position: relative;
+}
+
+.gryffindor-event-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.gryffindor-event-description {
+  align-self: flex-start;
+}
+
+.gryffindor-register-button {
+  background-color: rgb(95, 68, 62);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .gryffindor-events-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 103.95px;
-    column-gap: 94px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .gryffindor-event-card {
-    display: flex;
-    background-color: #1D0902;
-    border-radius: 70px;
-    overflow: hidden;
-    opacity: 0;
-    border: 3px solid #97804F;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .gryffindor-event-card.reveal {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .gryffindor-event-image {
-    height: 368px;
-    width: 457.88px;
-    padding: 34.98px;
-  }
-  
-  .gryffindor-event-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
-  }
-  
-  .gryffindor-event-details {
-    width: 60%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .gryffindor-event-title {
-    font-size: 1.5rem;
-    color: white;
-    font-family: Joan, serif;
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .gryffindor-event-venue, .gryffindor-event-time, .gryffindor-event-date {
-    font-family: Joan, serif;
-    margin: 5px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-  }
-  
-  .gryffindor-event-venue {
-    margin-bottom: 100px;
-  }
-  
-  .gryffindor-event-date {
-    font-size: 25px;
-  }
-  
-  .gryffindor-event-info {
-    position: relative;
-  }
-  
-  .gryffindor-event-hover-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease, backdrop-filter 0.2s ease;
-    backdrop-filter: blur(0);
-  }
-  
-  .gryffindor-event-info:hover .gryffindor-event-hover-content {
-    opacity: 1;
-    backdrop-filter: blur(10px);
-  }
-  
-  .gryffindor-event-description {
-    margin-bottom: 10px;
-  }
-  
-  .gryffindor-register-button {
-    background-color: rgb(95, 68, 62);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .gryffindor-events-grid {
       padding: 30px;
       column-gap: 60px;
       row-gap: 80px;
-    }
-    
-    .gryffindor-event-image {
+  }
+
+  .gryffindor-event-image {
       height: 320px;
       width: 400px;
       padding: 25px;
-    }
-    
-    .gryffindor-event-title {
-      font-size: 26px;
-    }
   }
-  
-  @media (max-width: 992px) {
-    .gryffindor-events-grid {
+
+  .gryffindor-event-title {
+      font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gryffindor-events-grid {
       grid-template-columns: 1fr;
       row-gap: 60px;
       padding: 25px;
-    }
-    
-    .gryffindor-event-card {
+  }
+
+  .gryffindor-event-card {
       border-radius: 50px;
-    }
-    
-    .gryffindor-event-image {
+  }
+
+  .gryffindor-event-image {
       height: 300px;
       width: 350px;
       padding: 20px;
-    }
-    
-    .gryffindor-event-title {
-      font-size: 24px;
-    }
-    
-    .gryffindor-event-venue, .gryffindor-event-time {
-      font-size: 18px;
-    }
-    
-    .gryffindor-event-date {
-      font-size: 22px;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .gryffindor-event-card {
+
+  .gryffindor-event-title {
+      font-size: 24px;
+  }
+
+  .gryffindor-event-venue, .gryffindor-event-time {
+      font-size: 18px;
+  }
+
+  .gryffindor-event-date {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gryffindor-event-card {
       flex-direction: column;
       border-radius: 40px;
-    }
-    
-    .gryffindor-event-image {
+  }
+
+  .gryffindor-event-image {
       width: 100%;
       height: 250px;
       padding: 20px 20px 10px 20px;
-    }
-    
-    .gryffindor-event-details {
+  }
+
+  .gryffindor-event-details {
       width: 100%;
       padding: 0 20px 20px 20px;
-    }
-    
-    .gryffindor-event-venue {
-      margin-bottom: 50px;
-    }
   }
-  
-  @media (max-width: 576px) {
-    .gryffindor-events-grid {
+
+  .gryffindor-event-venue {
+      margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gryffindor-events-grid {
       padding: 15px;
       row-gap: 40px;
-    }
-    
-    .gryffindor-event-card {
+  }
+
+  .gryffindor-event-card {
       border-radius: 30px;
       border-width: 2px;
-    }
-    
-    .gryffindor-event-image {
+  }
+
+  .gryffindor-event-image {
       height: 200px;
       padding: 15px 15px 10px 15px;
-    }
-    
-    .gryffindor-event-image img {
+  }
+
+  .gryffindor-event-image img {
       border-radius: 25px;
-    }
-    
-    .gryffindor-event-title {
+  }
+
+  .gryffindor-event-title {
       font-size: 20px;
-    }
-    
-    .gryffindor-event-venue, .gryffindor-event-time {
+  }
+
+  .gryffindor-event-venue, .gryffindor-event-time {
       font-size: 16px;
-    }
-    
-    .gryffindor-event-date {
+  }
+
+  .gryffindor-event-date {
       font-size: 18px;
-    }
-    
-    .gryffindor-event-venue {
+  }
+
+  .gryffindor-event-venue {
       margin-bottom: 30px;
-    }
-    
-    .gryffindor-register-button {
+  }
+
+  .gryffindor-register-button {
       padding: 8px 16px;
       font-size: 14px;
-    }
   }
+}

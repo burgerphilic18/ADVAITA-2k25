@@ -1,233 +1,248 @@
 .slytherin-b {
-    background: rgb(23, 57, 49);
-    padding: 20px 0;
-  }
-  
+  background: rgb(23, 57, 49);
+  padding: 20px 0;
+}
+
+.slytherin-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 103.95px;
+  column-gap: 94px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slytherin-event-card {
+  position: relative;
+  display: flex;
+  background-color: #051814;
+  border-radius: 70px;
+  overflow: hidden;
+  opacity: 0;
+  border: 3px solid #EFAF32;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slytherin-event-card.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slytherin-event-card:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.slytherin-event-card:hover .slytherin-event-hover-content {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slytherin-event-image {
+  height: 368px;
+  width: 457.88px;
+  padding: 34.98px;
+}
+
+.slytherin-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.slytherin-event-details {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slytherin-event-title {
+  font-size: 1.5rem;
+  color: #EFAF32;
+  font-family: Joan, serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.slytherin-event-venue, .slytherin-event-time, .slytherin-event-date {
+  font-family: Joan, serif;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #EFAF32;
+}
+
+.slytherin-event-venue {
+  margin-bottom: 100px;
+}
+
+.slytherin-event-date {
+  font-size: 25px;
+}
+
+.slytherin-event-info {
+  position: relative;
+}
+
+.slytherin-event-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slytherin-event-description {
+  align-self: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+}
+
+.slytherin-register-button {
+  background-color: #EFAF32;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #051814;
+  border-radius: 5px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   .slytherin-events-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 103.95px;
-    column-gap: 94px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px;
+    column-gap: 60px;
+    row-gap: 80px;
   }
-  
-  .slytherin-event-card {
-    display: flex;
-    background-color: #051814;
-    border-radius: 70px;
-    overflow: hidden;
-    opacity: 0;
-    border: 3px solid #EFAF32;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .slytherin-event-card.reveal {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
+
   .slytherin-event-image {
-    height: 368px;
-    width: 457.88px;
-    padding: 34.98px;
+    height: 320px;
+    width: 400px;
+    padding: 25px;
   }
-  
-  .slytherin-event-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .slytherin-event-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slytherin-events-grid {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    padding: 25px;
+  }
+
+  .slytherin-event-card {
     border-radius: 50px;
   }
-  
-  .slytherin-event-details {
-    width: 60%;
+
+  .slytherin-event-image {
+    height: 300px;
+    width: 350px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-  
+
   .slytherin-event-title {
-    color: #EFAF32;
-    font-family: Joan, serif;
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-size: 24px;
   }
-  
-  .slytherin-event-venue, .slytherin-event-time, .slytherin-event-date {
-    font-family: Joan, serif;
-    margin: 5px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #EFAF32;
+
+  .slytherin-event-venue, .slytherin-event-time {
+    font-size: 18px;
   }
-  
-  .slytherin-event-venue {
-    margin-bottom: 100px;
-  }
-  
+
   .slytherin-event-date {
-    font-size: 25px;
+    font-size: 22px;
   }
-  
-  .slytherin-event-info {
-    position: relative;
-  }
-  
-  .slytherin-event-hover-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    display: flex;
+}
+
+@media (max-width: 768px) {
+  .slytherin-event-card {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease, backdrop-filter 0.2s ease;
-    backdrop-filter: blur(0);
+    border-radius: 40px;
   }
-  
-  .slytherin-event-info:hover .slytherin-event-hover-content {
-    opacity: 1;
-    backdrop-filter: blur(10px);
+
+  .slytherin-event-image {
+    width: 100%;
+    height: 250px;
+    padding: 20px 20px 10px 20px;
   }
-  
-  .slytherin-event-description {
-    margin-bottom: 10px;
+
+  .slytherin-event-details {
+    width: 100%;
+    padding: 0 20px 20px 20px;
   }
-  
-  .slytherin-register-button {
-    background-color: #EFAF32;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+
+  .slytherin-event-venue {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slytherin-events-grid {
+    padding: 15px;
+    row-gap: 40px;
+  }
+
+  .slytherin-event-card {
+    border-radius: 30px;
+    border-width: 2px;
+  }
+
+  .slytherin-event-image {
+    height: 200px;
+    padding: 15px 15px 10px 15px;
+  }
+
+  .slytherin-event-image img {
+    border-radius: 25px;
+  }
+
+  .slytherin-event-title {
+    font-size: 20px;
+  }
+
+  .slytherin-event-venue, .slytherin-event-time {
     font-size: 16px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #051814;
-    border-radius: 5px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .slytherin-events-grid {
-      padding: 30px;
-      column-gap: 60px;
-      row-gap: 80px;
-    }
-    
-    .slytherin-event-image {
-      height: 320px;
-      width: 400px;
-      padding: 25px;
-    }
-    
-    .slytherin-event-title {
-      font-size: 26px;
-    }
+
+  .slytherin-event-date {
+    font-size: 18px;
   }
-  
-  @media (max-width: 992px) {
-    .slytherin-events-grid {
-      grid-template-columns: 1fr;
-      row-gap: 60px;
-      padding: 25px;
-    }
-    
-    .slytherin-event-card {
-      border-radius: 50px;
-    }
-    
-    .slytherin-event-image {
-      height: 300px;
-      width: 350px;
-      padding: 20px;
-    }
-    
-    .slytherin-event-title {
-      font-size: 24px;
-    }
-    
-    .slytherin-event-venue, .slytherin-event-time {
-      font-size: 18px;
-    }
-    
-    .slytherin-event-date {
-      font-size: 22px;
-    }
+
+  .slytherin-event-venue {
+    margin-bottom: 30px;
   }
-  
-  @media (max-width: 768px) {
-    .slytherin-event-card {
-      flex-direction: column;
-      border-radius: 40px;
-    }
-    
-    .slytherin-event-image {
-      width: 100%;
-      height: 250px;
-      padding: 20px 20px 10px 20px;
-    }
-    
-    .slytherin-event-details {
-      width: 100%;
-      padding: 0 20px 20px 20px;
-    }
-    
-    .slytherin-event-venue {
-      margin-bottom: 50px;
-    }
+
+  .slytherin-register-button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
-  
-  @media (max-width: 576px) {
-    .slytherin-events-grid {
-      padding: 15px;
-      row-gap: 40px;
-    }
-    
-    .slytherin-event-card {
-      border-radius: 30px;
-      border-width: 2px;
-    }
-    
-    .slytherin-event-image {
-      height: 200px;
-      padding: 15px 15px 10px 15px;
-    }
-    
-    .slytherin-event-image img {
-      border-radius: 25px;
-    }
-    
-    .slytherin-event-title {
-      font-size: 20px;
-    }
-    
-    .slytherin-event-venue, .slytherin-event-time {
-      font-size: 16px;
-    }
-    
-    .slytherin-event-date {
-      font-size: 18px;
-    }
-    
-    .slytherin-event-venue {
-      margin-bottom: 30px;
-    }
-    
-    .slytherin-register-button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  }
+}
