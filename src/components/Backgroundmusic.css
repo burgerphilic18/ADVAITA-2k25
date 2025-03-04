@@ -2,7 +2,7 @@ audio {
     display: none;
 }
 button {
-    background-color: #4CAF50; /* Green */
+    
     border: none;
     color: white;
     padding: 10px 20px;
@@ -43,6 +43,6 @@ button {
 .icon {
     color: rgb(2, 119, 252); 
     font-size: 32px; 
-    stroke: #4CAF50; 
+     
     stroke-width: 1; 
 }
