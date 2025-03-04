@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './BackgroundMusic.css';
+import './Backgroundmusic.css';
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 const BackgroundMusic = () => {
     const [isMuted, setIsMuted] = useState(false);
@@ -19,19 +19,25 @@ const BackgroundMusic = () => {
             audioRef.current.volume = 0.5; 
             audioRef.current.loop = false; 
             audioRef.current.currentTime = 0;
-            audioRef.current.play().catch(()=>{
-                console.log("Audio failed to play");
-            });
-            const stopTimeout = setTimeout(() => {
-                if (audioRef.current) {
-                    audioRef.current.pause();
+            const playAudio = async ()=>{
+                try{
+                    await audioRef.current.play();
+                    const stopAudioTimeout = setTimeout(() => {
+                        if (audioRef.current) {
+                            audioRef.current.pause();
+                            console.log("Audio stopped after 25 seconds");
+                        }
+                    }, 25000);
+                    return () => clearTimeout(stopAudioTimeout);
+                }catch(err){
+                    console.log(err);
                 }
-            }, 17000); 
-
+            };
             
-            return () => clearTimeout(stopTimeout);  
+           
+            playAudio();
         }
-    }, []);
+},[]);
 
     return (
         <div>
