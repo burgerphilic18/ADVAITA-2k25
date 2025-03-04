@@ -1,8 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar/Nav";
-import Home from "./Home";
-import Events from "./events";
+document.addEventListener('mousemove', function (e) {
+  const sparkle = document.createElement('div');
+  sparkle.className = 'sparkle trail';
+  sparkle.style.left = `${e.pageX}px`;
+  sparkle.style.top = `${e.pageY}px`;
+  document.body.appendChild(sparkle);
 
 const App = () => {
   return (
@@ -15,5 +16,19 @@ const App = () => {
     </Router>
   );
 };
+  setTimeout(() => {
+    sparkle.remove();
+  }, 500);
+});
 
-export default App;
+document.addEventListener('click', function (e) {
+  const sparkle = document.createElement('div');
+  sparkle.className = 'sparkle click';
+  sparkle.style.left = `${e.pageX}px`;
+  sparkle.style.top = `${e.pageY}px`;
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => {
+    sparkle.remove();
+  }, 1000);
+});
