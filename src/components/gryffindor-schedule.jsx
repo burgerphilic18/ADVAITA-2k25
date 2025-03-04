@@ -106,11 +106,11 @@ const Gryffindor_Schedule = () => {
                 <p className="gryffindor-event-venue">Venue: {event.venue}</p>
                 <p className="gryffindor-event-date">{event.date}</p>
                 <p className="gryffindor-event-time">{event.time}</p>
-                <div className="gryffindor-event-hover-content">
-                  <p className="gryffindor-event-description">Description</p>
-                  <button className="gryffindor-register-button">Register</button>
-                </div>
               </div>
+            </div>
+            <div className="gryffindor-event-hover-content">
+              <p className="gryffindor-event-description">Description</p>
+              <button className="gryffindor-register-button">Register</button>
             </div>
           </div>
         ))}
