@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './BackgroundMusic.css';
+import './Backgroundmusic.css';
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 const BackgroundMusic = () => {
     const [isMuted, setIsMuted] = useState(false);
