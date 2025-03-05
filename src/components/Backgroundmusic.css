@@ -1,0 +1,48 @@
+audio {
+    display: none;
+}
+button {
+    
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.music-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    transition: all 0.3s ease;
+}
+
+.music-toggle-button:hover {
+    background: rgba(255, 255, 255, 0.151); 
+    transform: scale(1.1);
+}
+.music-toggle-button:focus {
+    outline: none; 
+}
+.icon {
+    color: rgb(2, 119, 252); 
+    font-size: 32px; 
+     
+    stroke-width: 1; 
+}
