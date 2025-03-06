@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
+import pro1 from "../assets/pronites1.JPG";
+import pro6 from "../assets/pronites6.JPG";
 
-const ImageCarousel = () => {
+import pro3 from "../assets/pronites3.JPG";
+
+import pro4 from "../assets/pronites4.JPG";
+
+
+import pro5 from "../assets/pronites5.JPG";
+
+
+
+function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(2); // Start with middle image active
   const images = [
-    { id: 1, src: '/' },
-    { id: 2, src: '/' },
-    { id: 3, src: '/' },
-    { id: 4, src: '/' },
-    { id: 5, src: '/' }
+    { id: 1, src: pro1 },
+    { id: 2, src: pro3 },
+    { id: 3, src:  pro6  },
+    { id: 4, src: pro4 },
+    { id: 5, src:  pro5 }
   ];
 
   useEffect(() => {
@@ -33,11 +44,11 @@ const ImageCarousel = () => {
 
   return (
     <div className="carousel-container">
-      
+
       <button className="nav-button prev-button" onClick={handlePrev}>
         &lt;
       </button>
-      
+
       <div className="carousel-wrapper">
         <div className="carousel-content">
           {images.map((image, index) => {
@@ -45,34 +56,34 @@ const ImageCarousel = () => {
             const position = (index - currentIndex + images.length) % images.length;
             // Normalize position to be between -2 and 2
             const normalizedPosition = position > 2 ? position - images.length : position;
-            
+
             return (
-              <div 
-                key={image.id} 
+              <div
+                key={image.id}
                 className={`carousel-item ${normalizedPosition === 0 ? 'active' : ''}`}
                 style={{
                   transform: `translateX(${normalizedPosition * 100}%)`,
                   zIndex: 2 - Math.abs(normalizedPosition)
                 }}
                 onClick={() => goToSlide(index)}
-                >
+              >
                 <div className="image-placeholder">
                   <img src={image.src} alt={`Slide ${image.id}`} />
                 </div>
-            </div>
+              </div>
             );
           })}
         </div>
       </div>
-      
+
       <button className="nav-button next-button" onClick={handleNext}>
         &gt;
       </button>
-      
+
       <div className="carousel-dots">
         {images.map((_, index) => (
-          <button 
-            key={index} 
+          <button
+            key={index}
             className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => goToSlide(index)}
           ></button>
@@ -80,6 +91,6 @@ const ImageCarousel = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ImageCarousel;
