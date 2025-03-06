@@ -1,7 +1,12 @@
 import React from 'react';
 import './Gallery.css';
 import pngWing from "../assets/pngwing.com.svg";
-
+import img2 from "../assets/galleryimg2.JPG";
+import img4 from "../assets/galleryimg1.JPG";
+import img1 from "../assets/galleryimg4.JPG";
+import img5 from "../assets/galleryimg5.JPG";
+import img3 from "../assets/galleryimg3.JPG";
+import img6 from "../assets/galleryimg6.JPG";
 
 const Gallery = () => {
   return (
@@ -20,29 +25,25 @@ const Gallery = () => {
 
       {/* Main gallery grid */}
       <div className="gallery-grid">
-        {/* Left tall image */}
-        <div className="gallery-item tall-left">
-          <img src="/" alt="Gallery image" />
-        </div>
-        
-        {/* Top center image */}
+        <div className="gallery-item left">
+          <img src={img1} alt="Gallery image 1" />
+        </div>        
         <div className="gallery-item center-top">
-          <img src="/" alt="Gallery image" />
+          <img src={img2} alt="Gallery image 2" />
         </div>
         
-        {/* Right small image */}
-        <div className="gallery-item small-right">
-          <img src="/" alt="Gallery image" />
+        <div className="gallery-item top-right">
+          <img src={img3} alt="Gallery image 3" />
+        </div>
+        <div className="gallery-item bottom-right">
+          <img src={img4} alt="Gallery image 4" />
         </div>
         
-        {/* Bottom wide image */}
-        <div className="gallery-item wide-bottom">
-          <img src="/" alt="Gallery image" />
+        <div className="gallery-item center-bottom-1">
+          <img src={img5} alt="Gallery image 5" />
         </div>
-        
-        {/* Full width image at bottom */}
-        <div className="gallery-item full-width">
-          <img src="/" alt="Gallery image" />
+        <div className="gallery-item center-bottom-2">
+          <img src={img6} alt="Gallery image 6" />
         </div>
       </div>
 

@@ -103,7 +103,7 @@ html, body, #root, .App {
 /* Gallery grid layout - takes up all available space */
 .gallery-grid {
   display: grid;
-  grid-template-columns: 1.25fr 1.75fr 1fr;
+  grid-template-columns: 1.25fr 0.875fr 0.875fr 1fr;
   grid-template-rows: repeat(8, 1fr);
   gap: 10px;
   flex-grow: 1;
@@ -113,8 +113,9 @@ html, body, #root, .App {
 .gallery-item {
   background-color: #e0e0e0;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Add smooth transition */
-  position: relative; /* Needed for z-index to work */
+  transition: transform 0.3s ease; 
+  position: relative; 
+  border: 3px solid #97804F;
 }
 
 .gallery-item:hover {
@@ -130,29 +131,34 @@ html, body, #root, .App {
   transition: transform 0.3s ease;
 }
 
-.tall-left {
-  grid-row: 3 / span 4;
+.left {
   grid-column: 1;
+  grid-row: 3 / span 6;
 }
 
 .center-top {
-  grid-column: 2;
-  grid-row: span 4;
+  grid-column: 2 / span 2;
+  grid-row: span 5;
 }
 
-.small-right {
-  grid-column: 3;
+.top-right {
+  grid-column: 4;
   grid-row: 2 / span 3;
 }
 
-.wide-bottom {
-  grid-column: 2 / span 2;
-  grid-row: 5 / span 2;
+.bottom-right {
+  grid-column: 4;
+  grid-row: 5 / span 4;
 }
 
-.full-width {
-  grid-column: 1 / span 3;
-  grid-row: 7 / span 2;
+.center-bottom-1 {
+  grid-column: 2;
+  grid-row: 6 / span 3;
+}
+
+.center-bottom-2 {
+  grid-column: 3;
+  grid-row: 6 / span 3;
 }
 
 /* Footer with buttons */

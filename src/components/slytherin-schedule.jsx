@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./slytherin-schedule.css";
 
-const slytherin_schedule = () => {
+const SlytherinSchedule = () => {
     const events = [
         {
           id: 1,
@@ -106,11 +106,11 @@ const slytherin_schedule = () => {
                 <p className="slytherin-event-venue">Venue: {event.venue}</p>
                 <p className="slytherin-event-date">{event.date}</p>
                 <p className="slytherin-event-time">{event.time}</p>
-                <div className="slytherin-event-hover-content">
+              </div>
+            </div>
+            <div className="slytherin-event-hover-content">
                   <p className="slytherin-event-description">Description of the event goes here.</p>
                   <button className="slytherin-register-button">Register</button>
-                </div>
-              </div>
             </div>
           </div>
         ))}
@@ -119,4 +119,4 @@ const slytherin_schedule = () => {
     );
 };
 
-export default slytherin_schedule;
+export default SlytherinSchedule;
