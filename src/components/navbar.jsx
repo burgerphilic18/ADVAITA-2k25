@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AdvaitaWhite from "/advaita-white.svg";
-import "./navbar.css"; 
+// import "./navbar.css"; 
 
 
 const Navbar = () => {

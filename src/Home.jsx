@@ -14,7 +14,7 @@ import BackgroundMusic from "./components/BackgroundMusic";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
      
       <Navbar />
       <HomePage />
