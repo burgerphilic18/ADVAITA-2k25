@@ -114,6 +114,7 @@ html, body, #root, .App {
   transition: transform 0.3s ease; 
   position: relative; 
   border: 3px solid #97804F;
+  min-height:270px;
 }
 
 .gallery-item:hover {
