@@ -105,7 +105,7 @@ html, body, #root, .App {
   background-color: #4fb741;
 }
 
-/* Gallery grid layout - takes up all available space */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: 1.25fr 0.875fr 0.875fr 1fr;
@@ -130,7 +130,6 @@ html, body, #root, .App {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Slideshow container and image styles */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -222,6 +221,7 @@ html, body, #root, .App {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: 15px;
+    place-items: center;
   }
   .logo-diamond {
     width: fit-content;
@@ -248,7 +248,7 @@ html, body, #root, .App {
   }
 
   .gallery-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   
   .gallery-footer {
@@ -261,7 +261,7 @@ html, body, #root, .App {
   }
 
   .Gallerybanners {
-    width: 150px;
+    display:none;
   }
 }
 
@@ -282,7 +282,7 @@ html, body, #root, .App {
     margin-right: 0px;
   }
   .gallery-item {
-    height: 250px; /* Smaller height for very small screens */
+    height: 250px; 
   }
   .gallery-title{
     margin-left: 10px;

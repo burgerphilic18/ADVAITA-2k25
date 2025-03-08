@@ -47,7 +47,7 @@ const ImageSlideshow = ({ images, alt }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
     
     return () => clearInterval(interval);
   }, [images.length]);
@@ -70,7 +70,7 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       
-      {/* Header with logo and banners */}
+      
       <header className="gallery-header">
         <div className="logo-container">
           <div className="logo-diamond">
@@ -125,11 +125,8 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Footer with buttons */}
-      <div className="gallery-footer">
-        <button className="gallery-button view-more">VIEW MORE</button>
-        <button className="gallery-button brochure">BROCHURE</button>
-      </div>
+      
+      
     </div>
   );
 };

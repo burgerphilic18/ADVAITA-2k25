@@ -1,7 +1,7 @@
 import React from 'react';
 import './SponsorsPage.css';
 import hat from  "../assets/hat-1.svg";
-
+import ComingSoon from  "../assets/coming-soon.jpeg";
 const SponsorsPage = () => {
   return (
     <div className="sponsors-page">
@@ -17,51 +17,51 @@ const SponsorsPage = () => {
       </div>
       
       <div className="sponsors-grid">
-        {/* Top row - larger sponsors */}
+        
         <div className="sponsors-row top-sponsors">
           <div className="sponsor-box large">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box large">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
         </div>
         
-        {/* Middle row - medium sponsors */}
+        
         <div className="sponsors-row medium-sponsors">
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
         </div>
         
-        {/* Bottom row - medium sponsors */}
+        
         <div className="sponsors-row small-sponsors">
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src="/" alt="Sponsor image" />
+          <img src={ComingSoon} alt="Sponsor image" />
           </div>
         </div>
       </div>

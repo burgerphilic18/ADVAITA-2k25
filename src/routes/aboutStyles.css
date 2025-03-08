@@ -102,15 +102,38 @@
   .about-btns button {
     background-color: #F1CE89;
     border: 3px solid #97804F;
-    font-size: 24px;
-    padding: 15px 30px;
+    font-size: 18px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    color:#000;
+    background: radial-gradient(
+    circle at center,
+    #F1CE89 0%,     
+    #ddb86d 60%,   
+    #EFAF32 100%    
+  );
+    animation: scaleButton 2s infinite ease-in-out;
   }
-  
-  .about-btns button:hover {
-    transform: scale(1.05);
-  }
+  @keyframes scaleButton {
+    0% {
+        transform: scale(1);
+        background: radial-gradient(circle at center, #F1CE89 0%, #ddb86d 60%, #EFAF32 100%);
+    }
+    50% {
+        transform: scale(1.1);
+        background: radial-gradient(circle at center, #F7D79B 0%, #e2c07a 60%, #F5B943 100%);
+    }
+    100% {
+        transform: scale(1);
+        background: radial-gradient(circle at center, #F1CE89 0%, #ddb86d 60%, #EFAF32 100%);
+    }
+}
+.about-btns button:hover {
+  transform: scale(1.15);
+  background: radial-gradient(circle at center, #FFD89B 0%, #e8c286 60%, #FFB74D 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
   
   /* Responsive Styling */
   @media (max-width: 768px) {
@@ -139,6 +162,15 @@
       font-size: 20px;
       padding: 12px 25px;
     }
+    .about-btns{
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+    .about-btns button{
+      margin-bottom: 0px;
+      padding: 5px 10px; 
+      font-size: 12px;
+    }
   }
   
   @media (max-width: 480px) {
@@ -150,7 +182,7 @@
     }
   
     .theme-div p {
-      font-size: 18px;
+      font-size: 15px;
     }
   
     .about-div-heading h2 {
@@ -162,17 +194,20 @@
     }
   
     .about-div p {
-      font-size: 18px;
+      font-size: 15px;
     }
   
     .about-btns {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
     }
   
     .about-btns button {
-      font-size: 18px;
-      padding: 10px 20px;
+      width:150px;
+      font-size: 13px;
+      padding: 5px 10px;
+      margin: 0px 0px;
     }
     .special-el {
       width: fit-content;

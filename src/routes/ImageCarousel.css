@@ -55,7 +55,7 @@
 
 .carousel-content {
   position: relative;
-  width: 300px;  /* Width of the center item */
+  width: 300px;  
   height: 100%;
 }
 
@@ -85,15 +85,17 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1000px;
+  transition: all 0.5s ease;
+
 }
 
-/* Size for all images */
+
 .carousel-item .image-placeholder {
   width: 200px;
   height: 280px;
 }
 
-/* Size for the center (active) image */
+
 .carousel-item.active .image-placeholder {
   width: 280px;
   height: 380px;
@@ -205,6 +207,9 @@
 }
 
 @media (max-width: 480px) {
+  .app-container{
+    min-height: 70vh;
+  }
   .carousel-wrapper {
     height: 300px;
   }
@@ -226,33 +231,23 @@
   }
   
   .nav-button {
-    width: 30px;
+    width: 10px;
     height: 30px;
     font-size: 16px;
+    border:none;
+  }
+  .prev-button {
+    left: 7px;
+  }
+  
+  .next-button {
+    right: 7px;
   }
 }
 
 
-/* Default size (reduce from 60px to 15px) */
-.carousel-dot {
-  width: 15px;  /* Smaller dots */
-  height: 15px;
-  border-radius: 50%;
-  background-color: white;
-  border: none;
-  margin: 0 5px; /* Reduce spacing */
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-}
 
-/* Active dot (slightly larger for emphasis) */
-.carousel-dot.active {
-  opacity: 1;
-  transform: scale(1.2); /* Slight enlargement */
-}
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .carousel-dot {
     width: 12px;
