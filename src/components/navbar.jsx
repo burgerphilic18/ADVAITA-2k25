@@ -35,7 +35,7 @@ const Navbar = () => {
       {/* Menu Left */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end ">
         <a href="/" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">HOME</a>
-        <a href="/" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</a>
+        <a href="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</a>
       </div>
 
       {/* Center Logo */}
@@ -45,8 +45,10 @@ const Navbar = () => {
 
       {/* Menu Right */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-start ">
+
         <a href="/" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="#register" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">REGISTER</a>
+
       </div>
 
       <div className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[#0b1720] bg-opacity-95 flex flex-col justify-center items-center gap-10 transition-transform duration-400 z-40 
