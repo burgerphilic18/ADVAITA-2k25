@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Events from "./events";
-import LandingPage from "./components/LandingPage/LandingPage";
+import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx";
 import {useState} from 'react';
 import "./sparkles.js";
