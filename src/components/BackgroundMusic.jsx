@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Backgroundmusic.css';
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
-const BackgroundMusic = () => {
-    const [isMuted, setIsMuted] = useState(true);
-    const [isPlaying, setIsPlaying] = useState(false);
+const BackgroundMusic = ({autoPlay=false,initialMuted=true}) => {
+    const [isMuted, setIsMuted] = useState(initialMuted);
     const audioRef = useRef(null);
+    const interactionListenerRef = useRef(null);
+   
 
-    // Toggle play/pause
+   
     const toggleMute = () => {
         if (audioRef.current) {
             audioRef.current.muted = !audioRef.current.muted;
@@ -18,35 +19,39 @@ const BackgroundMusic = () => {
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = 0.5; 
-            audioRef.current.loop = false; 
-            audioRef.current.currentTime = 0;
-            audioRef.current.muted = true;
+            audioRef.current.loop = true; 
+            audioRef.current.muted = initialMuted;
             const playAudio = async ()=>{
                 try{
+                    
                     await audioRef.current.play();
-                    // const stopAudioTimeout = 
-                    setTimeout(() => {
-                        if (audioRef.current) {
-                            audioRef.current.pause();
-                            console.log("Audio stopped after 25 seconds");
-                        }
-                    }, 25000);
-
-                    // return () => clearTimeout(stopAudioTimeout);
+                      // return () => clearTimeout(stopAudioTimeout);
                 }catch(err){
                     console.log(err);
                     const handleUserInteraction = () => {
-                        audioRef.current.play();
-                        document.removeEventListener("click", handleUserInteraction);
-                    };
+                        if (audioRef.current){
+                        audioRef.current.play().catch(err => console.log(err));
+                        
+                    }
+                    document.removeEventListener("click", handleUserInteraction);
+                };
+                    interactionListenerRef.current = handleUserInteraction;
                     document.addEventListener("click", handleUserInteraction);    
                 }
             };
-            
-           
-            playAudio();
+            if(autoPlay){
+                playAudio();
+            } 
         }
-},[]);
+        return ()=>{
+
+            
+            
+            if (interactionListenerRef.current) {
+                document.removeEventListener("click", interactionListenerRef.current);
+            }
+    };
+},[autoPlay,initialMuted]);
 
     return (
         <div>
