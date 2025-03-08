@@ -124,10 +124,10 @@
   cursor: pointer;
   font-size: 16px;
   color: #011830;
-  border-radius: 5px;
+  border-radius: 15px;
   align-self: flex-end;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   right: 20px;
 }
 
