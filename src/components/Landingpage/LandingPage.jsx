@@ -5,7 +5,6 @@ import BackgroundMusic from '../BackgroundMusic';
 
 const LandingPage = ({setMusicEnabled}) => {
   const logoRef = useRef(null);
-  const audioRef = useRef(null);
   const navigate = useNavigate();
   const [fontsLoaded, setFontsLoaded] = useState(false);
   useEffect(() => {
