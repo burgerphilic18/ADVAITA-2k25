@@ -53,6 +53,7 @@ const LandingPage = ({setMusicEnabled}) => {
           </div>
         </div>
       </div>
+      <BackgroundMusic autoPlay={true} initialMuted={true} />
     </div>
   );
 };
