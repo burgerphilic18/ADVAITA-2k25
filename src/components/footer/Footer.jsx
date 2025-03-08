@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="logo-section">
           <div className="foot-links">
-            <a href="#events">Events</a>
+            <a href="/events">Events</a>
             
             <a href="#">Passes</a>
             <a href="#">Accomodation</a>
