@@ -1,7 +1,7 @@
 import React, { useEffect, useRef,useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
-import BackgroundMusic from '../components/BackgroundMusic';
+import BackgroundMusic from './BackgroundMusic';
 
 const LandingPage = ({setMusicEnabled}) => {
   const logoRef = useRef(null);
