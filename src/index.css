@@ -9,6 +9,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'Harry Potter';
+  src: url('/fonts/HARRYP.woff2') format('woff2'),
+       url('/fonts/HARRYP.woff') format('woff'),
+       url('/fonts/HARRYP.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   
   box-sizing: border-box;
