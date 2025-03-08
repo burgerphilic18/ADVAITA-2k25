@@ -19,7 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage setMusicEnabled={setMusicEnabled} />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/home/events" element={<Events />} />
       </Routes>
     </BrowserRouter>
   );
