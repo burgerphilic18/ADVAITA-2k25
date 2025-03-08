@@ -20,7 +20,7 @@ const SlytherinSchedule = () => {
           date: "29 March 2025",
           time: "09:00 am - 06:00 pm",
           image: "/sample-image.png" ,
-          description: "Dive into the adrenaline-fueled world of mobile gaming with BGMI, the ultimate battle royale experience on the go. Strategize with your squad, loot resources, and outmaneuver your opponents in a fastpaced, action-packed battleground. From intense firefights to strategic positioning, every decision counts as you fight to be the last one standing. Join us for the BGMI tournament and experience the thrill of mobile gaming at its finest. ",
+          description: "Dive into the adrenaline-fueled world of mobile gaming with BGMI. Strategize with your squad, loot resources, and outmaneuver your opponents in a fastpaced, action-packed battleground. Every decision counts as you fight to be the last one standing. Join us for the BGMI tournament and experience the thrill of mobile gaming at its finest. ",
           link: "https://unstop.com/p/treasure-hunt-the-hidden-trail-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413986"
         },
         {
@@ -30,7 +30,7 @@ const SlytherinSchedule = () => {
           date: "29 March 2025",
           time: "09:00 am - 06:00 pm",
           image: "/sample-image.png" ,
-          description: "Enter the tactical realm of Valorant, where precision and strategy reign supreme. Choose from a diverse roster of agents, each with unique abilities, and master the art of gunplay and tactics. Coordinate with your team, execute flawless strategies, and dominate the competition in high-stakes matches. Join Us for the Valorant tournament and showcase your skills in the ultimate test of tactical prowess and teamwork. ",
+          description: "Enter the tactical realm of Valorant, where precision and strategy reign supreme. Choose from a diverse roster of agents, each with unique abilities, and master the art of gunplay and tactics alongwith team-work and coordination. Join Us for the Valorant tournament and showcase your skills in the ultimate test of tactical prowess and teamwork. ",
           link: "https://unstop.com/p/treasure-hunt-the-hidden-trail-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413986"
         },
         {
@@ -40,7 +40,7 @@ const SlytherinSchedule = () => {
             date: "27 March 2025",
             time: "08:00 pm - 09:00 pm",
             image: "/sample-image.png" ,
-            description: "'Manthan' is a dynamic speaker session designed to spark innovative thinking and meaningful dialogue. Inspired by the concept of 'churning'—much like the mythological Samudra Manthan, where persistent effort led to the emergence of something extraordinary—this session aims to bring together diverse voices from various industries to share their insights, experiences, and visions for the future.",
+            description: "'Manthan' is a dynamic speaker session designed to spark innovative thinking and meaningful dialogue. Inspired by the mythological Samudra Manthan, where persistent effort led to the emergence of something extraordinary. This session aims to bring together diverse voices from various industries to share their insights, experiences, and visions for the future.",
             link: "https://unstop.com/competitions/manthan-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubanes-1413995"
         },
         {
@@ -110,7 +110,7 @@ const SlytherinSchedule = () => {
           date: "27 March 2025",
           time: "",
           image: "/sample-image.png" ,
-          description: "Advaita marathon 'Run For Blood' a purposeful journey to save lives through blood donation. Experience the unity of runners, all striving for a healthier community. Whether a seasoned runner or a beginner, every stride contributes to a collective effort for a more compassionate society. Lace up and join us in making a lasting impact on a crucial social cause ",
+          description: "'Run For Blood' a purposeful journey to save lives through blood donation. Experience the unity of runners, all striving for a healthier community. Whether a seasoned runner or a beginner, every stride contributes to a collective effort for a more compassionate society. Lace up and join us in making a lasting impact on a crucial social cause ",
           link: "https://unstop.com/competitions/run-for-a-cause-vedanta-samiti-marathon-advaita-annual-techno-cultural-fest-international-institute-of-info-1413990"
         },
         {
