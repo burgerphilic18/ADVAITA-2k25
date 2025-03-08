@@ -1,5 +1,5 @@
 .hufflepuff-b {
-  background: rgb(108, 88, 26);
+  background: linear-gradient(to bottom, rgb(33, 29, 23), rgb(108, 88, 26));
   padding: 20px 0;
 }
 
@@ -80,7 +80,7 @@
 .hufflepuff-event-venue, .hufflepuff-event-time, .hufflepuff-event-date {
   font-family: Joan, serif;
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #EFAF32;
 }
@@ -114,16 +114,13 @@
 
 .hufflepuff-event-description {
   align-self: flex-start;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px;
+  text-align: justify;
+  font-size: large;
 }
 
 .hufflepuff-register-button {
   background-color: #EFAF32;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
   color: #2D2409;
@@ -242,7 +239,6 @@
   }
 
   .hufflepuff-register-button {
-    padding: 8px 16px;
     font-size: 14px;
   }
 }
