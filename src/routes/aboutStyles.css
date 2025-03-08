@@ -4,7 +4,7 @@
   }
 @font-face {
     font-family: 'HarryPotter';
-    src: url('../src/fonts/HARRYP__.TTF') format('truetype');
+    src: url('../src/fonts/HARRYP__.woff2') format('truetype');
 }
   #aboutPage {
     width: 100%;
@@ -173,6 +173,18 @@
     .about-btns button {
       font-size: 18px;
       padding: 10px 20px;
+    }
+    .special-el {
+      width: fit-content;
+        
+    }
+    
+    .special-el img {
+      object-fit: contain;
+      
+      height: 100%;
+      margin-top: 18px;
+      width:150px;
     }
   }
   

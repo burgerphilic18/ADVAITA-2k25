@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'HarryPotter';
-  src: url('../src/fonts/HARRYP__.TTF') format('truetype');
+  src: url('../src/fonts/HARRYP__.woff2') format('truetype');
 }
 #statspage {
   width: 100%;
@@ -111,12 +111,12 @@
 /* Additional mobile responsiveness */
 @media screen and (max-width: 768px) {
   .stats-head {
-    flex-direction: column;
+    
     gap: 10px;
   }
   
   .stats-head img {
-    max-height: 50px;
+    max-width: 70px;
   }
   
   .stats-head h2 {

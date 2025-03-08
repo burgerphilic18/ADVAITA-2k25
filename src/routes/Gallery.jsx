@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 import pngWing from "../assets/pngwing.com.svg";
-
+import headEl from "../assets/Special-element-left1.svg";
 import banner1 from "../assets/banner1.JPG";
 import banner2 from "../assets/banner2.JPG";
 import banner3 from "../assets/banner3.JPG";
@@ -73,7 +73,9 @@ const Gallery = () => {
       {/* Header with logo and banners */}
       <header className="gallery-header">
         <div className="logo-container">
-          <div className="logo-diamond"></div>
+          <div className="logo-diamond">
+            <img src={headEl} />
+          </div>
           <h1 className="gallery-title">Gallery</h1>
         </div>
         <div className="Gallerybanners">

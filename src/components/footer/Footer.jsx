@@ -27,9 +27,9 @@ const Footer = () => {
     setStatus('sending');
 
     // Replace these with your actual EmailJS credentials
-    const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
-    const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
-    const publicKey = 'YOUR_EMAILJS_PUBLIC_KEY';
+    const serviceId = 'service_dic7osc';
+    const templateId = 'template_zjlmbeb';
+    const publicKey = '5dt1qQv0ISQjDoZg0';
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
@@ -44,7 +44,7 @@ const Footer = () => {
         setTimeout(() => setStatus(''), 5000);
       })
       .catch((error) => {
-        console.error('Error sending email:', error.text);
+        console.error('Error sending email:', error);
         setStatus('error');
         setTimeout(() => setStatus(''), 5000);
       });
@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="logo-section">
           <div className="foot-links">
-            <a href="events">Events</a>
+            <a href="#events">Events</a>
             <a href="#sponsors">Sponsors</a>
             <a href="#register">Register</a>
           </div>

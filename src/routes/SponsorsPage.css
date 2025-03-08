@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: 'HarryPotter';
-  src: url('./src/fonts/HARRYP__.TTF') format('truetype');
+  src: url('./src/fonts/HARRYP__.woff2') format('truetype');
 }
 .hat-sponsors{
   position: absolute;
