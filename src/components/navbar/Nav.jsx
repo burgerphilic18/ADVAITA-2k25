@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-2 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center">
       {/* Menu Left */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end "> 
-        <Link to="events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</Link>
+        <Link to="/events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</Link>
         <Link to="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</Link>
       </div>
 
