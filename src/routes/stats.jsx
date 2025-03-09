@@ -23,7 +23,7 @@ const StatsPage = ({ statistics = [] }) => {
         
         <div className="stats-head">
             <img src={SpecialElementL} ></img>
-            <h2>Our Stats</h2>
+            <h2 className="harry-potter-f" >Our Stats</h2>
             <img src={SpecialElementR}></img>
         </div>
         <div className="statistics-grid">

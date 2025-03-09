@@ -3,7 +3,7 @@ import "./info.css";
 
 const Info = ({ onGryffindorClick, onHufflepuffClick, onRavenclawClick, onSlytherinClick }) => {
   return (
-    <div className="info-box">
+    <div className="info-box harry-potter-f">
       <div className="info-text">
         Refer to the RuleBook above for the team specifications, requirements, format, and more details of all the events in Advaita.
       </div>

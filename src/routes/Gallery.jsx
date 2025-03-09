@@ -76,7 +76,7 @@ const Gallery = () => {
           <div className="logo-diamond">
             <img src={headEl} />
           </div>
-          <h1 className="gallery-title">Gallery</h1>
+          <h1 className="gallery-title harry-potter-f">Gallery</h1>
         </div>
         <div className="Gallerybanners">
           <img src={pngWing} alt="Decorative banner" />

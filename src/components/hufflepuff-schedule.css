@@ -115,7 +115,8 @@
 .hufflepuff-event-description {
   align-self: flex-start;
   text-align: justify;
-  font-size: medium;
+  font-size: large;
+  font-family: "PT Serif", serif;
 }
 
 .hufflepuff-register-button {
@@ -129,6 +130,7 @@
   position: absolute;
   bottom: 0px;
   right: 20px;
+  font-family: "PT Serif", serif;
 }
 
 /* Media Queries for Responsiveness */

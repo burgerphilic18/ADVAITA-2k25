@@ -19,8 +19,9 @@ const HomePage = () => {
         <a rel="noreferrer" target="_blank" href="https://www.youtube.com/@AdvaitaIIITBhubaneswar">
           <FontAwesomeIcon icon={faYoutube} style={{ color: "#f1ce89" }} className="social-icons"/>
         </a>
+
       </div>
-      <div className="rightVertical">
+      <div className="rightVertical pt-serif-regular">
           IIIT BHUBANESWAR, ODISHA
       </div>
       <Navbar />

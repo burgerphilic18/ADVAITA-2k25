@@ -11,7 +11,7 @@ const SponsorsPage = () => {
       <div className="sponsors-header">
         <div className="sponsors-title-container">
           <div className="sponsors-title-decoration">❖</div>
-          <h1 className="sponsors-title">SPONSORS</h1>
+          <h1 className="sponsors-title harry-potter-f">SPONSORS</h1>
           <div className="sponsors-title-decoration">❖</div>
         </div>
       </div>

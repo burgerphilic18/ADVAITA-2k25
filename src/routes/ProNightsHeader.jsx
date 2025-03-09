@@ -7,7 +7,7 @@ const ProNightsHeader = () => {
     <header className="header">
       <div className="sponsors-title-decoration">❖</div>
       
-      <h1 className="title">PRO NIGHTS</h1>
+      <h1 className="title harry-potter-f">PRO NIGHTS</h1>
       <div className="sponsors-title-decoration">❖</div>
     </header>
   );
