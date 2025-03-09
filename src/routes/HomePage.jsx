@@ -6,13 +6,13 @@ import Navbar from "../components/navbar/Nav";
 const HomePage = () => {
   return (
     <div id="homepage">
-      <div className="leftVertical">
+      <div className="leftVertical pt-serif-regular">
                     <div>FOLLOW US ON: </div>
                     <a rel="noreferrer" target="_blank" href="https://instagram.com/advaita_iiitbh"><img src="" alt="social" /></a>
                     <a rel="noreferrer" target="_blank" href="https://facebook.com/advaita.iiit"><img src="" alt="social" /></a>
                     <a rel="noreferrer" target="_blank" href="https://youtube.com/channel/UCkULTsUj0_Ukm9DWOtin5yw"><img src="" alt="social" /></a>
       </div>
-      <div className="rightVertical">
+      <div className="rightVertical pt-serif-regular">
           IIIT BHUBANESWAR, ODISHA
       </div>
       <Navbar />

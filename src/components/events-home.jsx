@@ -5,7 +5,7 @@ const EventsHome = () => {
   return (
     <div className="events-home">
       <Navbar />
-        <div className="event-text">
+        <div className="event-text harry-potter-f">
             EVENTS
         </div>
         <div className="second-text">
@@ -14,6 +14,7 @@ const EventsHome = () => {
         <div className="download">
             <a className="download-button" href=" " target="_blank" rel="noreferrer">Download Rulebook</a>
         </div>
+
         <div className="leftVertical">
                     <div>FOLLOW US ON: </div>
                     <a rel="noreferrer" target="_blank" href="https://instagram.com/advaita_iiitbh"><img src="" alt="social" /></a>
@@ -22,6 +23,7 @@ const EventsHome = () => {
       </div>
       <div className="rightVertical">
           IIIT BHUBANESWAR, ODISHA
+
       </div>
     </div>
   );
