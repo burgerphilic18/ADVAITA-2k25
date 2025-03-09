@@ -1,7 +1,7 @@
 .ravenclaw-background {
     width: 100%;
     height: 100vh;
-    background: url("/ravenclaw.png") no-repeat center center/cover;
+    background: url("/ravenclaw.webp") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,4 +10,10 @@
     flex-direction: column;
     position: relative;
 }
+@media (max-width:768px){
+    .ravenclaw-background{
+        background: url("/ravenclaw-mobile.webp") no-repeat center center/cover;
+    }
+}  
+
   

@@ -142,7 +142,7 @@
   }
 }
 
-/* Medium screen optimization for contact form */
+
 .contact-form-foot {
   border: 1px solid #daa520;
   width: 100%;
@@ -450,7 +450,11 @@
   .foot-links a {
     font-size: 1.8vmax;
   }
-  
+  .contact-form-foot {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contact-heading {
     font-size: 1.8rem;
   }

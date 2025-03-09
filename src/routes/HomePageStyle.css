@@ -24,6 +24,7 @@
   max-width: 600px;
   transition: all 0.3s ease;
   animation: uparNiche 3s ease-in-out infinite;
+  
 }
 @keyframes uparNiche {
   0% { transform: translateY(0); }
@@ -39,25 +40,66 @@
   height: 185px;
   max-width: 90%;
 }
-
-.vertical-iiit-text {
+@keyframes arver {
+  100% {
+      transform: translate(5.2rem, -1rem) rotate(-90deg);
+      opacity: 1;
+  }
+}
+.rightVertical {
   position: absolute;
-  right: 15px;
   top: 50%;
-  transform: translateY(-50%);
-  writing-mode: sideways-lr;
-  text-orientation: upright;
-  font-family: serif;
-  font-size: 3.5vh;
-  letter-spacing: 3px;
-  font-weight: 600;
-  color: #F1CE89; 
-  text-transform: uppercase;
-  line-height: 1.2;
-  z-index: 10;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin: 30px;
-  transition: all 0.3s ease;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  right: 0;
+  transform: translate(5.2rem, 9rem) rotate(-90deg);
+  opacity: 0;
+  animation: arver 1.5s forwards .8s;
+  color:#f1ce89;
+}
+
+@keyframes alver {
+  100% {
+      transform: translate(-5.2rem, -1.3rem) rotate(-90deg);
+      opacity: 1;
+  }
+}
+
+.leftVertical {
+  position: absolute;
+  top: 50%;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  left: 0;
+  transform: translate(-5.2rem, 9.3rem) rotate(-90deg);
+  opacity: 0;
+  animation: alver 1.5s forwards .4s;
+  color:#f1ce89;
+}
+
+.leftVertical img {
+  width: 1rem;
+  margin-left: 1.5rem;
+  filter: invert();
+  transition: .3s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.leftVertical img:hover {
+  scale: 1.5;
+}
+
+.dateBanner{
+  width:25vw;
+  height:auto;
+  object-fit: contain;
+}
+.dateBanner img{
+  width:100%;
+  height:100%;
+  
 }
 
 
@@ -87,11 +129,16 @@
   .DateBanner {
     transform: scale(0.9);
   }
+  .dateBanner{
+    width:50vw;
+    height:auto;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .MainLogoDiv {
-    width: 85%;
+    width: 80%;
   }
   
   .vertical-iiit-text {
@@ -104,11 +151,16 @@
   .DateBanner {
     transform: scale(0.8);
   }
+  .dateBanner{
+    width:60vw;
+    height:auto;
+    margin-top: 30vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .MainLogoDiv {
-    width: 90%;
+    width: 85%;
   }
   
   .vertical-iiit-text {
@@ -119,5 +171,16 @@
   
   .DateBanner {
     transform: scale(0.7);
+  }
+}
+@media (max-width: 850px) {
+  .leftVertical {
+      margin-left: -1.5rem;
+      margin-top: 15vh;
+  }
+
+  .rightVertical {
+      margin-right: -1.5rem;
+      margin-top: -15vh;
   }
 }

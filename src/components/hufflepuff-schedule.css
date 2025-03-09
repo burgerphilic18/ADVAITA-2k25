@@ -115,7 +115,7 @@
 .hufflepuff-event-description {
   align-self: flex-start;
   text-align: justify;
-  font-size: large;
+  font-size: medium;
 }
 
 .hufflepuff-register-button {
@@ -124,10 +124,10 @@
   cursor: pointer;
   font-size: 16px;
   color: #2D2409;
-  border-radius: 5px;
+  border-radius: 15px;
   align-self: flex-end;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   right: 20px;
 }
 

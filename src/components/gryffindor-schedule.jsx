@@ -80,7 +80,7 @@ const Gryffindor_Schedule = () => {
             date: "29 March 2025",
             time: "11:00 am -12:00pm",
             image: "/sample-image.png",
-            description: " Ensemble is a thrilling electronics competition where participants showcase their skills in circuit creation, troubleshooting, and optimization. From designing innovative circuits to solving real-world electrical challenges, this event tests both creativity and technical expertise. Whether you're a beginner or a pro, Circuit Design offers a hands-on experience in analog, digital, and embedded systems. Get ready to build, innovate, and compete!",
+            description: " From designing innovative circuits to solving real-world electrical challenges, Ensemble tests both creativity and technical expertise. Whether you're a beginner or a pro, Circuit Design offers a hands-on experience in analog, digital, and embedded systems. Get ready to build, innovate, and compete!",
             link: "" 
         },
     ];

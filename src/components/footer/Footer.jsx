@@ -58,10 +58,10 @@ const Footer = () => {
         <div className="logo-section">
           <div className="foot-links">
             <a href="/events">Events</a>
-            
             <a href="#">Passes</a>
             <a href="#">Accomodation</a>
             <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl ">Register</a>
+
           </div>
           
 
@@ -164,6 +164,7 @@ const Footer = () => {
               <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
             </svg>
           </a>
+
           <a href="mailto:advaita@iiit-bh.ac.in" target="_blank" rel="noopener noreferrer" className="social-icon">
             <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" viewBox="0 0 24 24">
               <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
