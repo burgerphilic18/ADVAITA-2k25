@@ -1,9 +1,10 @@
 import React from "react";
 import './events-home.css';
-
+import Navbar from "../components/navbar";
 const EventsHome = () => {
   return (
     <div className="events-home">
+      <Navbar />
         <div className="event-text">
             EVENTS
         </div>

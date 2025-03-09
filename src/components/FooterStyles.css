@@ -418,29 +418,35 @@
 /* For small mobile screens */
 @media (max-width: 375px) {
   .foot-links a {
-    font-size: 1.3vmax; /* Further reduced font size */
+    font-size: 1.3vmax; 
   }
   
   .contact-heading {
-    font-size: 1.3rem; /* Further reduced font size */
+    font-size: 1.3rem; 
   }
-  
+  .contact-form-foot {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contact-form input,
   .contact-form textarea {
-    font-size: 11px; /* Further reduced font size */
+    font-size: 9px; 
+    width:90%;
   }
   
   .submit-btn {
-    font-size: 12px; /* Further reduced font size */
+    font-size: 10px; 
+    width:90%;
   }
   
   .social-icon svg {
-    width: 22px; /* Further reduced width */
-    height: 22px; /* Further reduced height */
+    width: 20px; 
+    height: 20px; 
   }
   
   .join-text {
-    font-size: 16px; /* Further reduced font size */
+    font-size: 16px; 
   }
 }
 

@@ -70,15 +70,16 @@
 .sponsor-box {
   background-color: #e0e0e0;
   border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
-  overflow: hidden; /* Keep content within the border radius */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  overflow: hidden; 
+  border: 3px solid #97804F;
 }
 
 .sponsor-box:hover {
-  transform: scale(1.1); /* Makes the box 10% larger on hover */
-  z-index: 10; /* Ensures the hovered box appears above others */
-  box-shadow: 0 5px 15px rgba(224, 197, 110, 0.5); /* Gold-tinted shadow matching your theme */
-  cursor: pointer; /* Optional: changes cursor to indicate interactivity */
+  transform: scale(1.1); 
+  z-index: 10; 
+  box-shadow: 0 5px 15px rgba(224, 197, 110, 0.5); 
+  cursor: pointer; 
 }
 
 .sponsor-box img {
