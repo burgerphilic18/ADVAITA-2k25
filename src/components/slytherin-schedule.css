@@ -244,4 +244,7 @@
   .slytherin-register-button {
     font-size: 14px;
   }
+  .slytherin-b {
+    background: linear-gradient(to bottom, rgb(22, 40, 43), rgb(23, 57, 49));
+  }
 }
