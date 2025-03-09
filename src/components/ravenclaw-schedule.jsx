@@ -49,7 +49,7 @@ const RavenclawSchedule = () => {
             venue: "AG01",
             date: "28 March 2025",
             time: "09:00 am - 1:00pm",
-            image: "/sample-image.png" ,
+            image: "/hidden-trails.png" ,
             description: "Join the adventure in Hidden Trail at Advaita 2025! Decode clues, solve puzzles, and navigate through an exhilarating quest with friends. Brace yourself for surprises and the thrill of discovery at every turn-this is a quest like no other! ",
             link: "https://unstop.com/p/treasure-hunt-the-hidden-trail-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413991"
         },
@@ -59,7 +59,7 @@ const RavenclawSchedule = () => {
             venue: "AG02",
             date: "29 March 2025",
             time: "03:00 pm - 06:30 pm",
-            image: "/sample-image.png" ,
+            image: "/artnwear.png" ,
             description: "Unleash your creativity in Paint & Wear, a unique t-shirt painting competition where fashion meets art! Express yourself by transforming a plain t-shirt into a masterpiece using colors, brushes, and imagination. Whether it’s abstract, pop culture, nature, or a message-driven design—let your art speak!",
             link: "https://unstop.com/p/paint-and-wear-t-shirt-painting-competition-advaita-annual-techno-cultural-fest-international-institute-of-information-1414006"
         },
@@ -69,7 +69,7 @@ const RavenclawSchedule = () => {
             venue: "AG02",
             date: "30 March 2025",
             time: "11:00 am - 1:00pm",
-            image: "/sample-image.png" ,
+            image: "/stroke.png" ,
             description:"Unleash your creativity in the Stroke Race event at Advaita 2025! Join a dynamic challenge where one teammate describes a mysterious art piece while the other brings it to life on paper. It's a thrilling race against time and a test of teamwork, promising an unforgettable celebration of talent and expression.",
             link: "https://unstop.com/p/stroke-and-race-art-relay-competition-advaita-annual-techno-cultural-fest-international-institute-of-information-techn-1413988"
         },

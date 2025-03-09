@@ -9,7 +9,7 @@ const SlytherinSchedule = () => {
           venue: "BASKETBALL COURT",
           date: "29 March 2025",
           time: "07:30 am - 03:00pm",
-          image: "/sample-image.png" ,
+          image: "/futsal.png" ,
           description:" Futsal Arena is an action-packed 5-a-side football together in an electrifying battle on the court. Played on a smaller, fast-paced field, this event tests players' agility, quick decision-making, and teamwork",
           link: "https://unstop.com/p/the-futsal-arena-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswa-1414001"
         },
@@ -19,7 +19,7 @@ const SlytherinSchedule = () => {
           venue: "PLACEMENT CELL",
           date: "29 March 2025",
           time: "09:00 am - 06:00 pm",
-          image: "/sample-image.png" ,
+          image: "/bgmi.png" ,
           description: "Dive into the adrenaline-fueled world of mobile gaming with BGMI. Strategize with your squad, loot resources, and outmaneuver your opponents in a fastpaced, action-packed battleground. Every decision counts as you fight to be the last one standing. Join us for the BGMI tournament and experience the thrill of mobile gaming at its finest. ",
           link: "https://unstop.com/p/treasure-hunt-the-hidden-trail-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413986"
         },
@@ -29,7 +29,7 @@ const SlytherinSchedule = () => {
           venue: "PLACEMENT CELL",
           date: "29 March 2025",
           time: "09:00 am - 06:00 pm",
-          image: "/sample-image.png" ,
+          image: "/valorant.png" ,
           description: "Enter the tactical realm of Valorant, where precision and strategy reign supreme. Choose from a diverse roster of agents, each with unique abilities, and master the art of gunplay and tactics alongwith team-work and coordination. Join Us for the Valorant tournament and showcase your skills in the ultimate test of tactical prowess and teamwork. ",
           link: "https://unstop.com/p/treasure-hunt-the-hidden-trail-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413986"
         },
@@ -49,7 +49,7 @@ const SlytherinSchedule = () => {
             venue: "ONLINE",
             date: "28 March 2025",
             time: "",
-            image: "/sample-image.png" ,
+            image: "/vse.png" ,
             description: "The Virtual Stock Exchange is a simulated trading competition where participants will engage in buying and selling stocks in a virtual market.",
             link: "https://unstop.com/p/golgappa-king-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413984",
         },
@@ -69,7 +69,7 @@ const SlytherinSchedule = () => {
             venue: "FOOD COURT",
             date: "28 March 2025",
             time: "03:00 pm - 06:00 pm",
-            image: "/sample-image.png" ,
+            image: "/shole.png" ,
             description: "Spice up your taste buds in the Shole Parathe Challenge! It's not just about devouring parathas; participants face a fiery twist by eating hot chili sauce alongside the paratha in record time.",
             link: "https://unstop.com/p/sholle-parathe-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1414017"
         },
@@ -79,7 +79,7 @@ const SlytherinSchedule = () => {
             venue: "FOOD COURT",
             date: "30 March 2025",
             time: "10:00 am - 01:00 pm",
-            image: "/sample-image.png" ,
+            image: "/maggie.png" ,
             description: "Unleash your inner Maggie chef! Join the flavorful fun in the Maggie Eating Competition. Whether solo or with a partner, bring your appetite and creativity.",
             link: "https://unstop.com/p/maggie-chef-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413979"
         },
@@ -89,7 +89,7 @@ const SlytherinSchedule = () => {
             venue: "FOOD COURT",
             date: "29 March 2025",
             time: "03:30 pm - 06:00 pm",
-            image: "/sample-image.png" ,
+            image: "/golgappa.png" ,
             description: "Savor the spice in the Golgappa King competition! This street food showdown challenges participants to devour as many golgappas as possible in a given time. Get ready for a flavorful race to the title of Golgappa King! ",
             link: "https://unstop.com/p/golgappa-king-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1414010"
         },
@@ -99,7 +99,7 @@ const SlytherinSchedule = () => {
           venue: "FOOD COURT",
           date: "29 March 2025",
           time: "10:00 am - 01:00 pm",
-          image: "/sample-image.png" ,
+          image: "/string.png" ,
           description: "Dive into the art of string creativity with 'String Delicacy' at Advaita 2024! This team challenge invites pairs to craft intricate string delicacies in a race against time. Join the flavorful adventure, but remember, each participant can contribute only once. Let the string creativity unfold! ",
           link: "http://unstop.com/p/string-delicacy-team-sack-race-event-advaita-annual-techno-cultural-fest-international-institute-of-information-techno-1414014"
         },
