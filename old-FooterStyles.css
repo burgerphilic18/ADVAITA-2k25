@@ -147,23 +147,23 @@
   border: 1px solid #daa520;
   width: 100%;
   height: auto;
-  min-height: 300px;
+  min-height: 450px;
   margin-top: 20px;
   position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .contact-form-foot {
-    width: 47vw;
-    height: 35vw;
+    width: 57vw;
+    height: 40vw;
     margin-top: 3vw;
   }
 }
 
 @media (min-width: 1201px) {
   .contact-form-foot {
-    width: 600px;
-    height: 400px;
+    width: 683px;
+    height: 477px;
     margin-top: 45px;
   }
 }
@@ -226,7 +226,7 @@
   flex: 1;
 }
 
-
+/* Medium screen optimization for form inputs */
 .contact-form input {
   width: 90%;
   padding: 0.8rem;
@@ -235,19 +235,24 @@
   color: #fff;
   border-radius: 8px;
   height: 45px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-
-
-@media (min-width: 1201px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .contact-form input {
-    height: 40px;
-    font-size: 18px;
+    height: calc(45px + 0.7vw);
+    font-size: calc(16px + 0.5vw);
   }
 }
 
+@media (min-width: 1201px) {
+  .contact-form input {
+    height: 57px;
+    font-size: 25px;
+  }
+}
 
+/* Medium screen optimization for textarea */
 .contact-form textarea {
   width: 90%;
   padding: 0.8rem;
@@ -255,16 +260,23 @@
   border: none;
   color: #fff;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   min-height: 80px;
   resize: vertical;
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact-form textarea {
+    width: 45%;
+    font-size: calc(16px + 0.5vw);
+    min-height: calc(80px + 1.5vw);
+  }
+}
 
 @media (min-width: 1201px) {
   .contact-form textarea {
     width: 45%;
-    font-size: 18px;
+    font-size: 25px;
     min-height: 110px;
   }
 }
@@ -331,15 +343,20 @@
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-
+@media (min-width: 768px) and (max-width: 1200px) {
+  .submit-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: calc(16px + 0.5vw);
+  }
+}
 
 @media (min-width: 1201px) {
   .submit-btn {
     padding: 0.8rem 2rem;
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 
@@ -380,16 +397,21 @@
 }
 
 .join-text {
-  font-size: 30px;
+  font-size: 24px;
   width: 100%;
   text-align: center;
 }
 
-
+@media (min-width: 768px) and (max-width: 1200px) {
+  .join-text {
+    font-size: calc(24px + 0.7vw);
+    width: auto;
+  }
+}
 
 @media (min-width: 1201px) {
   .join-text {
-    font-size: 30px;
+    font-size: 35px;
     width: auto;
   }
 }
@@ -401,16 +423,21 @@
 
 /* Medium screen optimization for social icons */
 .social-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
-
+@media (min-width: 768px) and (max-width: 1200px) {
+  .social-icon svg {
+    width: calc(40px + 1vw);
+    height: calc(40px + 1vw);
+  }
+}
 
 @media (min-width: 1201px) {
   .social-icon svg {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -442,12 +469,12 @@
   }
   
   .social-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   
   .join-text {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
