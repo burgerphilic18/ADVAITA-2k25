@@ -84,12 +84,12 @@
 .sponsor-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .large {
   width: 300px;
-  height: 150px;
+  height: 200px;
 }
 
 .medium {

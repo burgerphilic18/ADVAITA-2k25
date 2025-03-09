@@ -20,48 +20,96 @@ const SponsorsPage = () => {
         
         <div className="sponsors-row top-sponsors">
           <div className="sponsor-box large">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/informatica.svg" alt="Sponsor image" />
           </div>
           <div className="sponsor-box large">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/rungta.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box large">
+          <img src="/ocac.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box large">
+          <img src="/indianoil.png" alt="Sponsor image" />
           </div>
         </div>
         
         
         <div className="sponsors-row medium-sponsors">
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/printlink.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/csm.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/accveil.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/wizertech.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/unicops.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/pantaloons.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/dell.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/jindal.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/hp.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/navbharat.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/dalmia.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/tata.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/union.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/dominos.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/securosoft.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/edevlop.png" alt="Sponsor image" />
           </div>
         </div>
         
         
         <div className="sponsors-row small-sponsors">
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/nalco.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/stpi.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/greentrends.png" alt="Sponsor image" />
           </div>
           <div className="sponsor-box medium">
-          <img src={ComingSoon} alt="Sponsor image" />
+          <img src="/incture.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/mcdonalds.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/ms.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/esquare.png" alt="Sponsor image" />
+          </div>
+          <div className="sponsor-box medium">
+          <img src="/krystal.png" alt="Sponsor image" />
           </div>
         </div>
       </div>
