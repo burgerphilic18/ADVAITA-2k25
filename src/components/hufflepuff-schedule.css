@@ -241,4 +241,7 @@
   .hufflepuff-register-button {
     font-size: 14px;
   }
+  .hufflepuff-b {
+    background: linear-gradient(to bottom, rgb(74, 69, 66), rgb(108, 88, 26));
+  }
 }

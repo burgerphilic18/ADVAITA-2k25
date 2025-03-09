@@ -200,6 +200,9 @@
   .gryffindor-event-venue {
       margin-bottom: 50px;
   }
+  .gryffindor-b {
+    background: linear-gradient(to bottom, rgb(42, 30, 21), rgb(58, 16, 16));
+  }
 }
 
 @media (max-width: 576px) {
