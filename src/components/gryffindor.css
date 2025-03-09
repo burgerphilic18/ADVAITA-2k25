@@ -27,5 +27,7 @@
     .gryffindor-overlay-text {
         display: none;
     }
-
+    .gryffindor-background{
+        background: url("/gryffindor-mobile.webp") ;
+    }
 }   
