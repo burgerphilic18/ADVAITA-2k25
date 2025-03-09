@@ -7,7 +7,7 @@ import Ravenclaw from "./components/ravenclaw";
 import Ravenclaw_Schedule from "./components/ravenclaw-schedule";
 import Slytherin from "./components/slytherin";
 import Slytherin_Schedule from "./components/slytherin-schedule";
-import Navbar from "./components/navbar";
+
 import EventsHome from "./components/events-home";
 import Info from "./components/info";
 import Footer from "./components/Footer";
@@ -24,7 +24,7 @@ function Events() {
 
   return (
     <div>
-      <Navbar />
+      
       <EventsHome />
       <Info
         onGryffindorClick={() => scrollToRef(gryffindorRef)}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Gallery.css';
 import pngWing from "../assets/pngwing.com.svg";
-
+import headEl from "../assets/Special-element-left1.svg";
 import banner1 from "../assets/banner1.JPG";
 import banner2 from "../assets/banner2.JPG";
 import banner3 from "../assets/banner3.JPG";
@@ -47,7 +47,7 @@ const ImageSlideshow = ({ images, alt }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
     
     return () => clearInterval(interval);
   }, [images.length]);
@@ -70,10 +70,12 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       
-      {/* Header with logo and banners */}
+      
       <header className="gallery-header">
         <div className="logo-container">
-          <div className="logo-diamond"></div>
+          <div className="logo-diamond">
+            <img src={headEl} />
+          </div>
           <h1 className="gallery-title">Gallery</h1>
         </div>
         <div className="Gallerybanners">
@@ -123,11 +125,8 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Footer with buttons */}
-      <div className="gallery-footer">
-        <button className="gallery-button view-more">VIEW MORE</button>
-        <button className="gallery-button brochure">BROCHURE</button>
-      </div>
+      
+      
     </div>
   );
 };

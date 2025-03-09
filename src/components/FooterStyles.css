@@ -1,5 +1,3 @@
-/* Updated FooterStyles.css with medium screen optimization */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -454,7 +452,6 @@
   .contact-heading {
     font-size: 1.8rem;
   }
-  
   .contact-form input,
   .contact-form textarea {
     font-size: 14px;

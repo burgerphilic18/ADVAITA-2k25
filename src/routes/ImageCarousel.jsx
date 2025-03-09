@@ -80,15 +80,7 @@ function ImageCarousel() {
         &gt;
       </button>
 
-      <div className="carousel-dots">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => goToSlide(index)}
-          ></button>
-        ))}
-      </div>
+      
     </div>
   );
 }

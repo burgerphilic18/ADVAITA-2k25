@@ -1,6 +1,5 @@
 
 import React from "react";
-import Navbar from "./components/navbar/Nav";
 import AboutPage from "./routes/about";
 import HomePage from "./routes/HomePage";
 import StatsPage from "./routes/stats";
@@ -16,7 +15,7 @@ const Home = () => {
   return (
     <div className="overflow-x-hidden">
      
-      <Navbar />
+      
       <HomePage />
       <AboutPage/>
       <StatsPage/>

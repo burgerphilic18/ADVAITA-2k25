@@ -8,11 +8,11 @@ import Broom1 from '../assets/broom-1.svg';
 const StatsPage = ({ statistics = [] }) => {
 
   const defaultStats = [
-    { value: "07+", label: "Fun Events", theme: "default" },
-    { value: "07+", label: "Pro Shows", theme: "primary" },
-    { value: "07+", label: "Technical Events", theme: "success" },
-    { value: "07+", label: "Cultural Events", theme: "warning" },
-    { value: "07+", label: "Total Footfall", theme: "danger" }
+    { value: "25+", label: "Fun Events", theme: "default" },
+    { value: "05+", label: "Pro Shows", theme: "primary" },
+    { value: "09+", label: "Technical Events", theme: "success" },
+    { value: "08+", label: "Cultural Events", theme: "warning" },
+    { value: "6000+", label: "Total Footfall", theme: "danger" }
   ];
 
   const stats = statistics.length > 0 ? statistics : defaultStats;
