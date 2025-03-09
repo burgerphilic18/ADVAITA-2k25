@@ -421,23 +421,23 @@
   transition: color 0.3s;
 }
 
-/* Medium screen optimization for social icons */
+
 .social-icon svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .social-icon svg {
-    width: calc(40px + 1vw);
-    height: calc(40px + 1vw);
+    width: calc(30px + 1vw);
+    height: calc(30px + 1vw);
   }
 }
 
 @media (min-width: 1201px) {
   .social-icon svg {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -469,8 +469,8 @@
   }
   
   .social-icon svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   
   .join-text {

@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-2 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center">
+    <nav id="navbar" style={{opacity: navbarOpacity}} className="fixed top-0 w-full z-50 transition-all duration-300 py-2 px-4 md:px-10 bg-transparent text-white flex justify-between  items-center pt-serif-regular">
       {/* Menu Left */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end "> 
         <Link to="/events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</Link>
@@ -43,8 +43,10 @@ const Navbar = () => {
       {/* Menu Right */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-start ">
         
-        <Link to="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">PASSES</Link>
-        <Link to="https://unstop.com/college-fests?searchTerm=advaita"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">REGISTER</Link>
+        <Link to="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" 
+  rel="noopener noreferrer" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">PASSES</Link>
+        <Link to="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" 
+  rel="noopener noreferrer" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">REGISTER</Link>
       </div>
 
       <div className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[#0b1720] bg-opacity-95 flex flex-col justify-center items-center gap-10 transition-transform duration-400 z-40 

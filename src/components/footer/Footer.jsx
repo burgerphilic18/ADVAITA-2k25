@@ -56,10 +56,12 @@ const Footer = () => {
       <div className="footer-left">
 
         <div className="logo-section">
-          <div className="foot-links">
-            <a href="events">Events</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl">Register</a>
+          <div className="foot-links pt-serif-regular">
+            <a href="/events">Events</a>
+            
+            <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" rel="noopener noreferrer">Passes</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Accomodation</a>
+            <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl " target="_blank" rel="noopener noreferrer">Register</a>
           </div>
           
 
@@ -71,20 +73,20 @@ const Footer = () => {
             />
             
           </div>
-          <div className="address"><p >2k25 ADVAITA, IIIT Bh, GOTHAPATANA- 751003</p></div>
+          <div className="address pt-serif-regular"><p >2k25 ADVAITA, IIIT Bh, GOTHAPATANA- 751003</p></div>
         </div>
 
       </div>
       
      
       <div className="footer-right">
-        <div className='contact-form-foot'>
-        <h2 className="contact-heading">CONTACT US</h2>
+        <div className='contact-form-foot pt-serif-regular'>
+        <h2 className="contact-heading harry-potter-f">CONTACT US</h2>
         
         <form ref={form} onSubmit={handleSubmit} className="contact-form">
           <div className="form-row">
             <div className="form-group">
-              <input
+              <input 
                 type="text"
                 name="name"
                 placeholder="Name"
@@ -145,7 +147,7 @@ const Footer = () => {
         </form>
         
         </div>
-        <div className="social-links">
+        <div className="social-links pt-serif-regular">
           <p className="join-text">Join Us</p>
           <a href="https://in.linkedin.com/school/international-institute-of-information-technology-bhubaneswar/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" viewBox="0 0 24 24">

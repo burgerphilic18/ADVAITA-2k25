@@ -41,14 +41,14 @@ const LandingPage = ({setMusicEnabled}) => {
           alt="Harry Potter Logo"
           className= {`mx-auto md:w-xl lg:w-2xl h-auto ${!fontsLoaded ? 'opacity-0' : ''} `}
         />
-        <p className="text-xl md:text-2xl lg:text-3xl max-w-md md:max-w-lg lg:max-w-xl mx-auto absolute bottom-0 left-0 right-0 transform translate-y-1/4 px-1 md:px-0 mb-3">
+        <p className="text-xl md:text-2xl lg:text-3xl max-w-md md:max-w-lg lg:max-w-xl mx-auto absolute bottom-0 left-0 right-0 transform translate-y-1/4 px-1 md:px-0 mb-3 pt-serif-regular">
           Join us for an enchanting experience filled with magic, mystery, and adventure. Celebrate the world of Harry Potter like never before!
         </p>
        </div>
         
         
         <div className="flex justify-center mt-16">
-          <div onClick={handleExploreClick}  className="px-10 py-3 border-1 border-yellow-400 text-yellow-400 font-semibold rounded-3xl transition duration-300">
+          <div onClick={handleExploreClick}  className="px-10 py-3 border-1 border-yellow-400 text-yellow-400 font-semibold rounded-3xl transition duration-300 harry-potter-f cursor-pointer hover:bg-yellow-400 hover:text-black text-4xl">
             Explore
           </div>
         </div>
