@@ -59,7 +59,7 @@ const Footer = () => {
           <div className="foot-links">
             <a href="events">Events</a>
             <a href="#sponsors">Sponsors</a>
-            <a href="#register">Register</a>
+            <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl">Register</a>
           </div>
           
 
