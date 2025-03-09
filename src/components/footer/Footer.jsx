@@ -57,11 +57,9 @@ const Footer = () => {
 
         <div className="logo-section">
           <div className="foot-links">
-            <a href="/events">Events</a>
-            
-            <a href="#">Passes</a>
-            <a href="#">Accomodation</a>
-            <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl ">Register</a>
+            <a href="events">Events</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl">Register</a>
           </div>
           
 
