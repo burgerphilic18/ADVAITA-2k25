@@ -12,7 +12,7 @@
 }
 @media (max-width:768px){
     .slytherin-background{
-        background: url("/slytherin-mobile.webp");
+        background: url("/slytherin-mobile.webp") no-repeat center center/cover;
     }
 }  
   

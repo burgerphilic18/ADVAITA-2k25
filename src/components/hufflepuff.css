@@ -12,7 +12,7 @@
 }
 @media (max-width:768px){
     .hufflepuff-background{
-        background: url("/hufflepuff-mobile.webp");
+        background: url("/hufflepuff-mobile.webp") no-repeat center center/cover;
     }
 }  
   

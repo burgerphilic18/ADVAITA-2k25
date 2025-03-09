@@ -28,6 +28,6 @@
         display: none;
     }
     .gryffindor-background{
-        background: url("/gryffindor-mobile.webp") ;
+        background: url("/gryffindor-mobile.webp") no-repeat center center/cover;
     }
 }   
