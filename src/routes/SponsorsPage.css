@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: 'HarryPotter';
-  src: url('./src/fonts/HARRYP__.TTF') format('truetype');
+  src: url('./src/fonts/HARRYP__.woff2') format('truetype');
 }
 .hat-sponsors{
   position: absolute;
@@ -84,12 +84,12 @@
 .sponsor-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .large {
   width: 300px;
-  height: 150px;
+  height: 200px;
 }
 
 .medium {
@@ -145,7 +145,32 @@
   .hat-sponsors{
     
     height:100px;
+    
+  }
+  .sponsors-title{
+    font-size: 2rem;
   }
 }
+@media (max-width: 350px) {
+  .large {
+    width: 200px;
+    height: 125px;
+  }
+  
+  .medium {
+    width: 100px;
+    height: 50px;
+  }
+  .hat-sponsors{
+    
+    display:none
+    
+  }
+  .sponsors-title{
+    font-size: 1.8rem;
+  }
+}
+
+
 
 

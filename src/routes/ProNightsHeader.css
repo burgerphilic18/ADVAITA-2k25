@@ -1,7 +1,10 @@
 .header {
   text-align: center;
   margin-bottom: 30px;
-  
+  display: flex;
+  justify-content: center;
+  gap:25px;
+  align-items: center;
 }
 @font-face {
   font-family: 'HarryPotter';
@@ -18,52 +21,20 @@
   font-family: 'HarryPotter';
 }
 
-.title::before,
-.title::after {
-  content: "◇";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #e4c87e;
-  font-size: 1.5rem;
-}
 
-.title::before {
-  left: -40px;
-}
-
-.title::after {
-  right: -40px;
-}
 
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
+
   
-  .title::before,
-  .title::after {
-    font-size: 1rem;
-    left: -30px;
-  }
-  
-  .title::after {
-    right: -30px;
-  }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
+ 
   
-  .title::before,
-  .title::after {
-    font-size: 0.8rem;
-    left: -20px;
-  }
-  
-  .title::after {
-    right: -20px;
-  }
 }

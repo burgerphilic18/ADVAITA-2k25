@@ -22,8 +22,10 @@ const AboutPage = () => {
         
       </div>
       <div className="about-btns">
-        <a href="events"><button className="schedule-btn">EVENTS SCHEDULE</button></a>
-        <a><button className="register-btn">REGISTER</button></a>
+        <a href=""><button className="accomodation-btn">ACCOMODATION</button></a>
+        <a href=""><button className="schedule-btn">EVENTS SCHEDULE</button></a>
+        <a href="/Advaita-25 Brochure.pdf" target="_blank" rel="noopener noreferrer"><button className="brochure-btn">BROCHURE</button></a>
+        <a href="https://unstop.com/college-fests?searchTerm=advaita"><button className="register-btn">REGISTER</button></a>
 
       </div>
 
