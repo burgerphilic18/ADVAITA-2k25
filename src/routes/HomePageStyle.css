@@ -2,7 +2,7 @@
 #homepage {
   width: 100%;
   height: 100vh;
-  background: url("../assets/herobig1.svg") no-repeat center center/cover;
+  background: url("../assets/herobig1.webp") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +102,15 @@
   
 }
 
+.social-icons {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons:hover {
+  transform: scale(1.5);
+}
+
 
 @media screen and (max-width: 992px) {
   .MainLogoDiv {
@@ -168,10 +177,6 @@
     letter-spacing: 0.5px;
     margin: 10px;
   }
-  
-  .DateBanner {
-    transform: scale(0.7);
-  }
 }
 @media (max-width: 850px) {
   .leftVertical {
@@ -182,5 +187,9 @@
   .rightVertical {
       margin-right: -1.5rem;
       margin-top: -15vh;
+  }
+  .dateBanner{
+    width: 60vw;
+    height: auto;
   }
 }
