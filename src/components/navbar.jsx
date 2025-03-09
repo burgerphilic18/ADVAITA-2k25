@@ -45,7 +45,6 @@ const Navbar = () => {
 
       {/* Menu Right */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-start ">
-       
         <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" 
   rel="noopener noreferrer"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" 

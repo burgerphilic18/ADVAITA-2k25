@@ -4,23 +4,48 @@ import gsap from 'gsap';
 import BackgroundMusic from './BackgroundMusic';
 
 const LandingPage = ({setMusicEnabled}) => {
-  const logoRef = useRef(null);
+  const [showVideo, setShowVideo] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const videoRef = useRef(null);
   const navigate = useNavigate();
+  const logoRef = useRef(null);
   const [fontsLoaded, setFontsLoaded] = useState(false);
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
   useEffect(() => {
     document.fonts.ready.then(() => {
       setFontsLoaded(true);
-    
     gsap.fromTo(logoRef.current, { opacity: 0, scale: 0.5, y: 80 },
          { opacity: 1, scale: 1, y: -40, duration: 1.5, ease: 'power2.out' }
         );
     });
   }, []);
+
   const handleExploreClick = () => {
-    
+    setShowVideo(true);
     setMusicEnabled(true);
-    navigate('/home');
+    
   };
+  const handleSkip =()=>{
+    if(videoRef.current){
+      videoRef.current.pause();
+    videoRef.current.currentTime = 0;
+  }
+  setShowVideo(false);
+  navigate('/home');
+  
+};
+const handleVideoEnd =()=>{
+  setShowVideo(false);
+  navigate('/home');
+}
   return (
     <div className="relative h-screen w-screen flex flex-col items-center">
       <img
@@ -30,7 +55,29 @@ const LandingPage = ({setMusicEnabled}) => {
       />
       
       
-      <div className="absolute inset-0 "></div>
+      {showVideo && (
+        <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
+          <button
+            onClick={handleSkip}
+            className="absolute top-4 right-4 text-white text-lg bg-yellow-500 px-4 py-2 rounded-lg z-50"
+          >
+            Skip
+          </button>
+          <video
+            ref={videoRef}
+            autoPlay
+            onEnded={handleVideoEnd}
+            className="w-full h-full object-contain"
+            muted={false}
+          >
+            <source
+              src={isMobile ? "/mobile-view.webm" : "/desktop.webm"}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
 
      
       <div className="relative z-10 text-center text-white pt-0 md:pt-5 lg:pt-0 mt-34 md:-mt-10 lg:-mt-36">
