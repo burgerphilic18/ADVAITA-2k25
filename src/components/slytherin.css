@@ -10,4 +10,9 @@
     flex-direction: column;
     position: relative;
 }
+@media (max-width:768px){
+    .slytherin-background{
+        background: url("/slytherin-mobile.webp") no-repeat center center/cover;
+    }
+}  
   

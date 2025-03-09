@@ -25,7 +25,9 @@ const AboutPage = () => {
         <a href="" target="_blank" rel="noopener noreferrer"><button className="accomodation-btn ">ACCOMODATION</button></a>
         <a href="" target="_blank" rel="noopener noreferrer"><button className="schedule-btn">EVENTS SCHEDULE</button></a>
         <a href="/Advaita-25 Brochure.pdf" target="_blank" rel="noopener noreferrer"><button className="brochure-btn">BROCHURE</button></a>
-        <a href="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" rel="noopener noreferrer"><button className="register-btn">REGISTER</button></a>
+
+        <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl"><button className="register-btn">REGISTER</button></a>
+
 
       </div>
 

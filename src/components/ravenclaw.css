@@ -10,4 +10,10 @@
     flex-direction: column;
     position: relative;
 }
+@media (max-width:768px){
+    .ravenclaw-background{
+        background: url("/ravenclaw-mobile.webp") no-repeat center center/cover;
+    }
+}  
+
   

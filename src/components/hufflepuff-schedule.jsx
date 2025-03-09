@@ -11,7 +11,7 @@ const Hufflepuff_Schedule = () => {
           time: "09:00 am - 02:00 pm",
           description: " Dance your heart out at Advaita24's Solo and Group Dance extravaganza! From Western beats to Nrityakala finesse, showcase your talent. Group Dance rules ensure a dynamic performance within a 6-minute time frame, allowing creativity to shine with freedom in song choice and personal props. Join us for a rhythmic celebration! ",
           link: "https://unstop.com/p/footloose-solo-dance-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhuban-1414050",
-          image: "/footloose-mobile.png" 
+          image: "/footloose.png" 
         },
         {
           id: 2,
@@ -21,7 +21,7 @@ const Hufflepuff_Schedule = () => {
           time: "09:00 am - 02:00 pm",
           description: " Dance your heart out at Advaita24's Solo and Group Dance extravaganza! From Western beats to Nrityakala finesse, showcase your talent. Group Dance rules ensure a dynamic performance within a 6-minute time frame, allowing creativity to shine with freedom in song choice and personal props. Join us for a rhythmic celebration! ",
           link: "https://unstop.com/p/footloose-duet-dance-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhuban-1414051",
-          image: "/footloose-mobile.png" ,
+          image: "/footloose.png" ,
           imagem: ""
         },
         {
@@ -32,7 +32,7 @@ const Hufflepuff_Schedule = () => {
             time: "09:00 am - 02:00 pm",
             description: " Dance your heart out at Advaita24's Solo and Group Dance extravaganza! From Western beats to Nrityakala finesse, showcase your talent. Group Dance rules ensure a dynamic performance within a 6-minute time frame, allowing creativity to shine with freedom in song choice and personal props. Join us for a rhythmic celebration! ",
             link: "https://unstop.com/p/footloose-group-dance-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhuba-1414047",
-            image: "/footloose-mobile.png" 
+            image: "/footloose.png" 
         },
         {
             id: 4,
