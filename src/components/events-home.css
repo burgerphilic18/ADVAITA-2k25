@@ -159,4 +159,11 @@
         margin-right: -1.5rem;
         margin-top: -15vh;
     }
+    .download{
+      width: 60%;
+      height: auto;
+    }
+    .download-button{
+      font-size: xx-large;
+    }
   }
