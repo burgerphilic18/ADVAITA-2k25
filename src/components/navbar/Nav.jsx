@@ -55,7 +55,7 @@ const Navbar = () => {
         ${menuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         <Link to="/events" className="text-2xl hover:opacity-80 transition-opacity">EVENTS</Link>
         <Link to="/" className="text-2xl hover:opacity-80 transition-opacity">MERCH</Link>
-        <Link to="/" className="text-2xl hover:opacity-80 transition-opacity">PASSES</Link>
+        <Link to="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" className="text-2xl hover:opacity-80 transition-opacity">PASSES</Link>
         <Link to="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl" className="text-2xl hover:opacity-80 transition-opacity">REGISTER</Link>
       </div>
 

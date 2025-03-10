@@ -15,7 +15,7 @@ const EventsHome = () => {
             SCHEDULE
         </div>
         <div className="download">
-            <a className="download-button" href=" " target="_blank" rel="noreferrer">Download Rulebook</a>
+            <a className="download-button" href="/RULEBOOK.pdf" target="_blank" rel="noreferrer">Download Rulebook</a>
         </div>
 
         <div className="leftVertical pt-serif-regular">
