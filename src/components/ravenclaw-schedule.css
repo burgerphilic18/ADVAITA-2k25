@@ -243,4 +243,7 @@
   .ravenclaw-register-button {
     font-size: 14px;
   }
+  .ravenclaw-b {
+    background: linear-gradient(to bottom, rgb(34, 42, 51), rgb(25, 47, 63));
+  }
 }

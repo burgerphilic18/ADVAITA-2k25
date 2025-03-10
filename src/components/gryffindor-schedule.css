@@ -243,4 +243,7 @@
   .gryffindor-register-button {
       font-size: 14px;
   }
+  .gryffindor-b {
+    background: linear-gradient(to bottom, rgb(42, 30, 21), rgb(58, 16, 16));
+  }
 }
