@@ -71,7 +71,7 @@ const handleVideoEnd =()=>{
             muted={false}
           >
             <source
-              src={isMobile ? "/mobile-view.webm" : "/desktop.webm"}
+              src={isMobile ? "/mobile-view.mp4" : "/desktop.mp4"}
               type="video/mp4"
             />
             Your browser does not support the video tag.
