@@ -21,7 +21,7 @@
   #aboutPage {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#1A1F20, #002348);
+    background: linear-gradient(rgb(1, 4, 7), #002348);
     display: flex;
     align-items: center;
     flex-direction: column;
