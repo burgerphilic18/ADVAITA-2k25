@@ -39,9 +39,16 @@ const Navbar = () => {
       </div>
 
       {/* Center Logo */}
-      <div className="flex items-center justify-center flex-1 nav-logo1">
-        <img src={AdvaitaWhite} alt="Advaita" className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300" />
-      </div>
+      <div className="flex items-center justify-start md:justify-start lg:justify-start xl:justify-start flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
+  <img
+    src={AdvaitaWhite}
+    alt="Advaita"
+    className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300"
+  />
+</div>
+
+
+
 
       {/* Menu Right */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-start ">
@@ -64,15 +71,16 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden relative z-50 flex items-center ">
-        <button onClick={toggleMenu} className="focus:outline-none m-0">
-          <div className="w-8 h-6 flex flex-col justify-between mr-4 menuBar">
-            <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
-            <span className={`h-0.5 w-full bg-[#F1CE89] transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
-          </div>
-        </button>
-      </div>
+      <div className="md:hidden relative z-50 flex items-center">
+  <button onClick={toggleMenu} className="focus:outline-none m-0">
+    <div className="w-8 h-6 flex flex-col justify-between mr-1 md:mr-4 menuBar">
+      <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
+      <span className={`h-0.5 w-full bg-[#F1CE89] transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+      <span className={`h-0.5 w-full bg-[#F1CE89] transition-transform duration-300 ${menuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
+    </div>
+  </button>
+</div>
+
     </nav>
   );
 };
