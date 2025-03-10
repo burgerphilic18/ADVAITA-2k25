@@ -100,17 +100,6 @@
     scale: 1.5;
   }
   
-  .dateBanner{
-    width:25vw;
-    height:auto;
-    object-fit: contain;
-  }
-  .dateBanner img{
-    width:100%;
-    height:100%;
-    
-  }
-  
 
 .download {
     color: #97804F;
@@ -141,6 +130,15 @@
 .download:hover, .download:active {
     box-shadow: 0 0 20px rgba(239, 175, 50, 0.8);
     transform: scale(1.1);
+}
+
+.social-icons {
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons:hover {
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
