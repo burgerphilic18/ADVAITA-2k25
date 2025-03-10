@@ -57,8 +57,10 @@ const Navbar = () => {
         ${menuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         <a href="/home" className="text-2xl hover:opacity-80 transition-opacity">HOME</a>
         <a href="/" className="text-2xl hover:opacity-80 transition-opacity">MERCH</a>
-        <a href="/" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
-        <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl" className="text-2xl hover:opacity-80 transition-opacity">REGISTER</a>
+        <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" 
+  rel="noopener noreferrer" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
+        <a href="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" 
+  rel="noopener noreferrer"className="text-2xl hover:opacity-80 transition-opacity">REGISTER</a>
       </div>
 
       {/* Mobile Menu Toggle */}
