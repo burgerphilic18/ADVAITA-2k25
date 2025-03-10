@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {/* Center Logo */}
       <div className="flex items-center justify-center flex-1 nav-logo1">
-        <img src={AdvaitaWhite} alt="Advaita"className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300" />
+        <img src={AdvaitaWhite} alt="Advaita"className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300 ml-0 md:ml-8 lg:ml-16" />
       </div>
 
       {/* Menu Right */}

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .app-container {
   display: flex;
   flex-direction: column;
@@ -35,17 +38,17 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  
+  gap:10px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 40px 0;
 }
 
 .carousel-wrapper {
   position: relative;
-  width: 100%;
+  width: 82%;
   height: 450px;
   overflow: hidden;
   display: flex;
@@ -62,10 +65,10 @@
 .carousel-item {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100%;    
   top: 0;
   left: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +100,8 @@
 
 
 .carousel-item.active .image-placeholder {
-  width: 280px;
-  height: 380px;
+  width: 300px;
+  height: 400px;
   background-color: rgba(128, 128, 128, 0.9);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
@@ -107,19 +110,21 @@
   border-radius: 50px;
 }
 .nav-button {
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.3);
   color: rgb(136, 104, 24);
   border: none;
-  width: 40px;
+  width:40px;
   height: 40px;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
   z-index: 10;
   display: flex;
+  padding: 0px;
+  margin:0px;
+  text-align: center;
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s;
@@ -173,24 +178,24 @@
   }
   
   .carousel-item.active .image-placeholder {
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
   }
 }
 
 @media (max-width: 768px) {
   .carousel-wrapper {
-    height: 350px;
+    height: 400px;
   }
   
   .carousel-item .image-placeholder {
-    width: 160px;
+    width: 200px;
     height: 240px;
   }
   
   .carousel-item.active .image-placeholder {
-    width: 220px;
-    height: 320px;
+    width: 300px;
+    height: 400px;
   }
   
   .carousel-dot {
@@ -211,7 +216,7 @@
     min-height: 70vh;
   }
   .carousel-wrapper {
-    height: 300px;
+    height: 350px;
   }
   
   .carousel-item .image-placeholder {
@@ -220,8 +225,8 @@
   }
   
   .carousel-item.active .image-placeholder {
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
   }
   
   .carousel-dot {
@@ -231,7 +236,7 @@
   }
   
   .nav-button {
-    width: 10px;
+    width: 30px;
     height: 30px;
     font-size: 16px;
     border:none;
