@@ -246,4 +246,10 @@
   .ravenclaw-b {
     background: linear-gradient(to bottom, rgb(34, 42, 51), rgb(25, 47, 63));
   }
+  .ravenclaw-event-description {
+    align-self: flex-start;
+    text-align: justify;
+    font-size: medium;
+    font-family: "PT Serif", serif;
+  }
 }
