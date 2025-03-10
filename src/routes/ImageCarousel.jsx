@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight,faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
 import pro1 from "../assets/pronites1.JPG";
@@ -51,25 +53,25 @@ function ImageCarousel() {
   return (
     <div className="carousel-container">
 
-      <button className="nav-button prev-button" onClick={handlePrev}>
-        &lt;
+      <button className="nav-button prev-button flex justify-center items-center " onClick={handlePrev}>
+        <FontAwesomeIcon icon={faArrowLeft} />
       </button>
 
-      <div className="carousel-wrapper">
-        <div className="carousel-content">
+      <div className="carousel-wrapper !flex !justify-center !items-center">
+        <div className="carousel-content !flex !items-center !justify-center ">
           {images.map((image, index) => {
             // Calculate the position relative to current
             const position = (index - currentIndex + images.length) % images.length;
             // Normalize position to be between -2 and 2
-            const normalizedPosition = position > 2 ? position - images.length : position;
+            const normalizedPosition = position > 3 ? position - images.length : position;
 
             return (
               <div
                 key={image.id}
-                className={`carousel-item ${normalizedPosition === 0 ? 'active' : ''}`}
+                className={`carousel-item active `}
                 style={{
-                  transform: `translateX(${normalizedPosition * 100}%)`,
-                  zIndex: 2 - Math.abs(normalizedPosition)
+                 transform: `translateX(${normalizedPosition * 120}%)`,
+                  zIndex: (3 - Math.abs(normalizedPosition)<2?-1000:3)
                 }}
                 onClick={() => goToSlide(index)}
               >
@@ -80,10 +82,11 @@ function ImageCarousel() {
             );
           })}
         </div>
+
       </div>
 
-      <button className="nav-button next-button" onClick={handleNext}>
-        &gt;
+      <button className="nav-button prev-button flex justify-center items-center" onClick={handleNext}>
+      <FontAwesomeIcon icon={faArrowRight} />
       </button>
 
       
