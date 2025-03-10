@@ -247,4 +247,10 @@
   .slytherin-b {
     background: linear-gradient(to bottom, rgb(22, 40, 43), rgb(23, 57, 49));
   }
+  .slytherin-event-description {
+    align-self: flex-start;
+    text-align: justify;
+    font-size: medium;
+    font-family: "PT Serif", serif;
+  }
 }

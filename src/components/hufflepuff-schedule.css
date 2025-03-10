@@ -246,4 +246,10 @@
   .hufflepuff-b {
     background: linear-gradient(to bottom, rgb(74, 69, 66), rgb(108, 88, 26));
   }
+  .hufflepuff-event-description {
+    align-self: flex-start;
+    text-align: justify;
+    font-size: medium;
+    font-family: "PT Serif", serif;
+  }
 }
