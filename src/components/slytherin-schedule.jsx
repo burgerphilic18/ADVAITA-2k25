@@ -39,7 +39,7 @@ const SlytherinSchedule = () => {
             venue: "MAIN STAGE",
             date: "27 March 2025",
             time: "08:00 pm - 09:00 pm",
-            image: "/sample-image.png" ,
+            image: "/manthan.png" ,
             description: "'Manthan' is a dynamic speaker session designed to spark innovative thinking and meaningful dialogue. Inspired by the mythological Samudra Manthan, where persistent effort led to the emergence of something extraordinary. This session aims to bring together diverse voices from various industries to share their insights, experiences, and visions for the future.",
             link: "https://unstop.com/competitions/manthan-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubanes-1413995"
         },
@@ -55,11 +55,11 @@ const SlytherinSchedule = () => {
         },
         {
             id: 6,
-            title: "PITCHING EVENT",
+            title: "BIDDING WARS",
             venue: "CG02",
             date: "28 March 2025",
             time: "02:00 pm - 05:00 pm",
-            image: "/sample-image.png" ,
+            image: "/bidding.png" ,
             description: " Teams pitch a product idea to the audience. Audience members act as buyers with fake money to bid on their preferred pitch. The team accumulating the highest total 'sales' wins.",
             link: "https://unstop.com/o/W0CIhjz?utm_medium=Share&utm_source=shortUrl"
         },

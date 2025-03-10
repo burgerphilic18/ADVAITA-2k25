@@ -19,17 +19,17 @@ const RavenclawSchedule = () => {
           venue: "ONLINE",
           date: "27-30 March 2025",
           time: "Open All Time",
-          image: "/sample-image.png" ,
+          image: "/imagen.png" ,
           description:"Capturing moments that tell a thousand stories at Imagen, where the magic of photography and videography unfolds in fascinating frames. Join us on a visual journey as we explore the art of storytelling through the lens—one frame, one motion, one masterpiece at a time.",
           link: "https://unstop.com/p/advaita-in-30-sec-imagen-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bh-1414024"
         },
         {
             id: 3,
-            title: "THEME PHOTOGRAPHY",
+            title: "BROKEN STRINGS",
             venue: "ONLINE",
             date: "27-30 March 2025",
             time: "Open All Time",
-            image: "/sample-image.png" ,
+            image: "/broken.png" ,
             description: "Step into the world of Theme Photography, where every shot is a carefully crafted story. From vintage nostalgia to futuristic visions, we bring concepts to life through stunning visuals. Whether it's cinematic moods, fantasy realms, or conceptual artistry, our lens captures the essence of your theme with creativity and precision.",
             link: "https://unstop.com/p/theme-photography-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubanesw-1414037"
         },
@@ -39,7 +39,7 @@ const RavenclawSchedule = () => {
             venue: "ONLINE",
             date: "27-30 March 2025",
             time: "Open All Time",
-            image: "/sample-image.png" ,
+            image: "/imagen.png" ,
             description: "Capturing moments that tell a thousand stories at Imagen, where the magic of photography and videography unfolds in fascinating frames. Join us on a visual journey as we explore the art of storytelling through the lens—one frame, one motion, one masterpiece at a time.",
             link: "https://unstop.com/p/advaita-short-aftermovie-imagen-advaita-annual-techno-cultural-fest-international-institute-of-information-technology--1414032"
         },
