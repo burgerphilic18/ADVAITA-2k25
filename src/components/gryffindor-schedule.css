@@ -246,4 +246,10 @@
   .gryffindor-b {
     background: linear-gradient(to bottom, rgb(42, 30, 21), rgb(58, 16, 16));
   }
+  .gryffindor-event-description {
+    align-self: flex-start;
+    text-align: justify;
+    font-size: medium;
+    font-family: "PT Serif", serif;
+  }
 }
