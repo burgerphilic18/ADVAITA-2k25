@@ -8,6 +8,7 @@ import { LoadingProvider } from "./components/LoadingProvider.jsx";
 import LoadingSpinner from "./components/LoadingSpinner.jsx";
 import "./sparkles.js";
 import "./cursor.css";
+/*hi-random comment*/
 
 const App = () => {
   const [musicEnabled, setMusicEnabled] = useState(false);
