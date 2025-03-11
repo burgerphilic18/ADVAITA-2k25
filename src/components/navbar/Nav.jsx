@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {/* Center Logo */}
 
-      <div className="flex items-center justify-start md:justify-start lg:justify-start xl:justify-start flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
+      <div className="flex items-center  md:justify-start lg:justify-center xl:justify-center flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
   <img
     src={AdvaitaWhite}
     alt="Advaita"

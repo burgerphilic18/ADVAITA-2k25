@@ -40,7 +40,7 @@ const Navbar = () => {
 
       {/* Center Logo */}
 
-      <div className="flex items-center justify-start md:justify-start lg:justify-start xl:justify-start flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
+      <div className="flex items-center lg:justify-center md:justify-start lg:justify-center xl:justify-center flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
   <img
     src={AdvaitaWhite}
     alt="Advaita"
@@ -71,7 +71,7 @@ const Navbar = () => {
   rel="noopener noreferrer" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" 
   rel="noopener noreferrer"className="text-2xl hover:opacity-80 transition-opacity">REGISTER</a>
-
+      </div> 
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden relative z-50 flex items-center">

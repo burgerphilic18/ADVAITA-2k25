@@ -11,7 +11,7 @@ const AboutPage = () => {
       </div>
       <div className="about-div">
         <div className="about-div-heading">
-          <h2>About  <span className="harry-potter-f">ADVAITA</span></h2>
+          <h2 className="pt-serif-regular">About  <span className="harry-potter-f">ADVAITA</span></h2>
           <div className="special-el">
             <img src={SpecialElementR} alt="" />
           </div>
