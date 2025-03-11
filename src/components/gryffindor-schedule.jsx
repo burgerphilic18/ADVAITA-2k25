@@ -39,7 +39,7 @@ const Gryffindor_Schedule = () => {
             venue: "CG02",
             date: "30 March 2025",
             time: "10:00 am - 3:00pm",
-            image: "/tech-talk.webp",
+            image: "/tech-talk.png",
             description: 'Tech talks are discussions about technology and communication, and can be educational, inspirational, or motivational. They can take place in companies, at conferences, or online. ' ,
             link: 'https://unstop.com/conferences/beyond-boundaries-tech-talk-advaita-annual-techno-cultural-fest-international-institute-of-information-techn-1413944'
         },
@@ -59,7 +59,7 @@ const Gryffindor_Schedule = () => {
             venue: "OPEN SPACE",
             date: "28 March 2025",
             time: "03:00 pm - 6:00pm",
-            image: "/robosumo.webp",
+            image: "/robosumo.png",
             description: "Dive into the ultimate off-road challenge with your bots! Conquer rugged terrains, unleash adrenaline, and chase victory. Join now for an unforgettable thrill!",
             link: 'https://unstop.com/p/brawlbounty-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413218'
         },
