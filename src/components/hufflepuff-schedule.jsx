@@ -42,7 +42,7 @@ const Hufflepuff_Schedule = () => {
             time: "",
             description: "Rock the stage at Rockathon in Advaita 2024! With two rounds, including a preliminary and final round, unleash your musical prowess within specified time limits. Follow rules for a fair play no pre-recorded tracks, only English and Hindi music, and prohibition of misconduct. Let the rhythm roll and compete for the ultimate rock glory",
             link: "https://unstop.com/p/rockathon-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1414039",
-            image: "/sample-image.png" 
+            image: "/rockathon.png" 
         },
         {
             id: 5,
@@ -70,7 +70,7 @@ const Hufflepuff_Schedule = () => {
             venue: "AG01",
             date: "30 March 2025",
             time: "02:00 pm - 05:00 pm",
-            image: "/sample-image.png" ,
+            image: "/micdrop.png" ,
             description:" Mic Drop – The ultimate moment of confidence, power, and impact! Whether it's a legendary speech, a showstopping performance, or a game-changing announcement, a mic drop symbolizes the perfect ending. ",
             link: "https://unstop.com/p/mic-drop-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1414053"
         },
@@ -90,7 +90,7 @@ const Hufflepuff_Schedule = () => {
             venue: "ONLINE",
             date: "28 March 2025",
             time: "",
-            image: "/sample-image.png" ,
+            image: "/frameathon.png" ,
             description: " Frameathon, as part of Advaita 2024, invites passionate filmmakers to showcase their storytelling prowess through the lens of a camera. Whether it’s drama, thriller, documentary, or comedy, this is your platform to bring your vision to life. Submit your film and compete with best storytellers!",
             link: "https://unstop.com/p/frameathon-film-making-contest-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-i-1413950"
         },
@@ -100,7 +100,7 @@ const Hufflepuff_Schedule = () => {
             venue: "CG02",
             date: "29 March 2025",
             time: "03:00 pm - 06:30 pm",
-            image: "/sample-image.png" ,
+            image: "/mushaira.png" ,
             description: " Step into the mesmerizing world of Mushaira, where words weave magic, emotions flow freely, and poetry takes center stage. A traditional gathering of poets, Mushaira is a space where you can recite, listen, and immerse yourself in the beauty of Urdu, Hindi, and regional poetry ",
             link: "https://unstop.com/events/mushaira-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413982",
         }

@@ -39,6 +39,7 @@ const Navbar = () => {
       </div>
 
       {/* Center Logo */}
+
       <div className="flex items-center justify-start md:justify-start lg:justify-start xl:justify-start flex-1 nav-logo1 px-4 md:px-6 lg:px-10 xl:px-20">
   <img
     src={AdvaitaWhite}
@@ -46,6 +47,7 @@ const Navbar = () => {
     className="max-w-[120px] md:max-w-[140px] lg:max-w-[180px] transition-all duration-300"
   />
 </div>
+
 
 
 
@@ -64,11 +66,12 @@ const Navbar = () => {
         ${menuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         <a href="/home" className="text-2xl hover:opacity-80 transition-opacity">HOME</a>
         <a href="/" className="text-2xl hover:opacity-80 transition-opacity">MERCH</a>
+
         <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" 
   rel="noopener noreferrer" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
         <a href="https://unstop.com/college-fests/advaita-annual-techno-cultural-fest-international-institute-of-information-technology-bhubaneswar-340978" target="_blank" 
   rel="noopener noreferrer"className="text-2xl hover:opacity-80 transition-opacity">REGISTER</a>
-      </div>
+
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden relative z-50 flex items-center">
