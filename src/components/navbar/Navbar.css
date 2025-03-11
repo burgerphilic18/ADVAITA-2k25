@@ -18,6 +18,7 @@
   top: 0;
   z-index: 99;
   transition: all 0.3s ease;
+  overflow-x: hidden;
 }
 
 
@@ -163,6 +164,9 @@
   .logo img {
     max-width: 140px;
   }
+  .menuBar{
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -180,6 +184,9 @@
 
   #navbar {
     padding: 10px 20px;
+  }
+  .menuBar{
+    margin-right: 0px;
   }
 }
 
