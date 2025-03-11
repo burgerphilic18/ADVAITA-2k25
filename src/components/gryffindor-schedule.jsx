@@ -9,7 +9,7 @@ const Gryffindor_Schedule = () => {
           venue: "PLACEMENT CELL",
           date: "29 March 2025",
           time: "09:00 pm - Overnight",
-          image: "/hackathon.webp" ,
+          image: "/hackathon.png" ,
           description: 'Join "Hackfest-Advaita," the ultimate inter-college hackathon! Students unite, sharing knowledge and collaborating on groundbreaking projects in the realm of technology. Seize the opportunity to innovate and connect with like-minded minds!',
           link: 'https://unstop.com/p/hackfest-international-institute-of-information-technology-iiit-bhubaneswar-1413902'
         },
@@ -29,7 +29,7 @@ const Gryffindor_Schedule = () => {
             venue: "CG05-CG08",
             date: "29 March 2025",
             time: "03:00 pm - 06:00pm",
-            image: "/cf.webp" ,
+            image: "/cf.png" ,
             description: "Join our exhilarating team-based programming competition! Test your adaptability and coordination as you and your partner tackle distinct problem sets in separate rooms. Switch places at regular intervals, maneuvering each other's code to secure those coveted green ticks. ",
             link: 'https://unstop.com/p/code-fiesta-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413956'
         },
@@ -40,7 +40,7 @@ const Gryffindor_Schedule = () => {
             date: "30 March 2025",
             time: "10:00 am - 3:00pm",
 
-            image: "/tech-talk.webp",
+            image: "/tech-talk.png",
 
             description: 'Tech talks are discussions about technology and communication, and can be educational, inspirational, or motivational. They can take place in companies, at conferences, or online. ' ,
             link: 'https://unstop.com/conferences/beyond-boundaries-tech-talk-advaita-annual-techno-cultural-fest-international-institute-of-information-techn-1413944'
