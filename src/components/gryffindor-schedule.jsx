@@ -62,7 +62,7 @@ const Gryffindor_Schedule = () => {
             date: "28 March 2025",
             time: "03:00 pm - 6:00pm",
 
-            image: "/robosumo.webp",
+            image: "/robosumo.png",
 
             description: "Dive into the ultimate off-road challenge with your bots! Conquer rugged terrains, unleash adrenaline, and chase victory. Join now for an unforgettable thrill!",
             link: 'https://unstop.com/p/brawlbounty-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1413218'
