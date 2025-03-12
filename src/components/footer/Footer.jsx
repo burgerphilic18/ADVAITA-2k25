@@ -61,7 +61,7 @@ const Footer = () => {
             <a href="/events">Events</a>
             
             <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" rel="noopener noreferrer">Passes</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Accomodation</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIFPBV9n2-5WfVE6grv2eYTGcLpT7IKb5vnnJ9Jn94Hbbt-Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Accomodation</a>
             <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl " target="_blank" rel="noopener noreferrer">Register</a>
 
           </div>
