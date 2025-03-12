@@ -9,7 +9,7 @@ const RavenclawSchedule = () => {
           venue: "C310",
           date: "27-30 March 2025",
           time: "Open All Time",
-          image: "/sample-image.png" ,
+          image: "/photo.webp" ,
           description: "Embark on a visual journey at our Photogallery event, where every snapshot tells a unique story! Capture the essence of life through your lens and submit your best photos for a chance to showcase your talent in our upcoming exhibition. Let your creativity shine and be part of the visual masterpiece!",
           link: ""
         },
