@@ -22,8 +22,8 @@ const AboutPage = () => {
         
       </div>
       <div className="about-btns pt-serif-regular">
-        <a href="" target="_blank" rel="noopener noreferrer"><button className="accomodation-btn ">ACCOMODATION</button></a>
-        <a href="" target="_blank" rel="noopener noreferrer"><button className="schedule-btn">EVENTS SCHEDULE</button></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIFPBV9n2-5WfVE6grv2eYTGcLpT7IKb5vnnJ9Jn94Hbbt-Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer"><button className="accomodation-btn ">ACCOMODATION</button></a>
+        <a href="/RULEBOOK.pdf" target="_blank" rel="noopener noreferrer"><button className="schedule-btn">RULEBOOK</button></a>
         <a href="/Advaita-25 Brochure.pdf" target="_blank" rel="noopener noreferrer"><button className="brochure-btn">BROCHURE</button></a>
 
         <a href="https://unstop.com/f/PsILQcN?utm_medium=Share&utm_source=shortUrl"><button className="register-btn">REGISTER</button></a>

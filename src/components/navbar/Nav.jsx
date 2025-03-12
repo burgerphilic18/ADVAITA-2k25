@@ -32,7 +32,8 @@ const Navbar = () => {
       {/* Menu Left */}
       <div className="hidden md:flex items-center gap-[4vw] lg:gap-[5vw] xl:gap-[6vw] flex-1 justify-end "> 
         <Link to="/events" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">EVENTS</Link>
-        <Link to="/"className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</Link>
+        <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeIUwLG7soCqVjXrFmq8DUQ8F54wcq19Guc_ytGz9sskXSGfQ/viewform" target="_blank" 
+  rel="noopener noreferrer" className="text-xl lg:text-2xl xl:text-3xl hover:opacity-80 transition-opacity">MERCH</Link>
       </div>
 
       {/* Center Logo */}
@@ -65,7 +66,7 @@ const Navbar = () => {
         ${menuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
         <Link to="/events" className="text-2xl hover:opacity-80 transition-opacity">EVENTS</Link>
 
-        <Link to="/" target="_blank" 
+        <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeIUwLG7soCqVjXrFmq8DUQ8F54wcq19Guc_ytGz9sskXSGfQ/viewform" target="_blank" 
   rel="noopener noreferrer" className="text-2xl hover:opacity-80 transition-opacity">MERCH</Link>
         <a href="https://konfhub.com/a02e541d-da87-465b-ad6d-d61ca8384b75" target="_blank" 
   rel="noopener noreferrer" className="text-2xl hover:opacity-80 transition-opacity">PASSES</a>
