@@ -60,7 +60,7 @@ const Hufflepuff_Schedule = () => {
             venue: "MAIN STAGE",
             date: "29 March 2025",
             time: "06:00 pm - 08:30 pm",
-            image: "/sample-image.png" ,
+            image: "/lamode.png" ,
             description:"Experience the fusion of style and storytelling at 'LAMODE: A Fashion Odyssey.' This enchanting runway event transcends ordinary style, guiding you through realms of glamor, creativity, and timeless elegance. Join us for a mesmerizing journey down the runway where every stride tells sophisticated and innovative story. ",        
             link: "https://unstop.com/p/la-mode-advaita-annual-techno-cultural-fest-international-institute-of-information-technology-iiit-bhubaneswar-1414052"
         },

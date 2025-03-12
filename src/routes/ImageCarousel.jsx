@@ -8,7 +8,6 @@ import pro6 from "../assets/pronites6.JPG";
 import pro3 from "../assets/pronites3.JPG";
 
 import pro4 from "../assets/pronites4.JPG";
-import pro5 from "../assets/pronites5.JPG";
 import pro7 from "/asees-kaur.png";
 import pro8 from "/nikhil.png";
 import pro9 from "/arjun.webp";
@@ -21,9 +20,7 @@ function ImageCarousel() {
     { id: 1, src: pro1 },
     { id: 2, src: pro3 },
     { id: 3, src:  pro6  },
-    { id: 4, src: pro4 },
-
-    { id: 5, src:  pro5 },
+    { id: 5, src: pro4 },
     { id: 6, src: pro7 },
     { id: 7, src: pro8},
     { id: 8, src: pro9},

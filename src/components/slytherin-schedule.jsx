@@ -109,7 +109,7 @@ const SlytherinSchedule = () => {
           venue: "TBD",
           date: "27 March 2025",
           time: "",
-          image: "/sample-image.png" ,
+          image: "/marathon.png" ,
           description: "'Run For Blood' a purposeful journey to save lives through blood donation. Experience the unity of runners, all striving for a healthier community. Whether a seasoned runner or a beginner, every stride contributes to a collective effort for a more compassionate society. Lace up and join us in making a lasting impact on a crucial social cause ",
           link: "https://unstop.com/competitions/run-for-a-cause-vedanta-samiti-marathon-advaita-annual-techno-cultural-fest-international-institute-of-info-1413990"
         },
@@ -119,7 +119,7 @@ const SlytherinSchedule = () => {
           venue: "P BLOCK",
           date: "27 March 2025",
           time: "11:00 am - 01:00 pm",
-          image: "/sample-image.png" ,
+          image: "/blood.png" ,
           description: "Give the gift of life at Advaita 2025's Blood Donation drive! Your selfless act not only saves lives but also supports medical advancements, enhances emergency preparedness, and fosters community. Experience health benefits, civic engagement, and contribute to sustainable healthcare while raising awareness about the vital importance of blood donation.  ",
           link: "https://unstop.com/events/save-lives-be-a-herovedanta-samiti-blood-donation-camp-advaita-annual-techno-cultural-fest-international-institut-1413992"
         }
