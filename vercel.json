@@ -1,16 +1,7 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/home", "dest": "/"},
-    { "src": "/events", "dest": "/" }
-  ],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "installCommand": "npm install --legacy-peer-deps"
-      }
-    }
-  ]
-}
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/home", "dest": "/"},
+      { "src": "/events", "dest": "/" }
+    ]
+  }

@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 
 function SEO({ title, description, canonical, keywords }) {
@@ -13,6 +14,15 @@ function SEO({ title, description, canonical, keywords }) {
       document.head.appendChild(metaDescription);
     }
     metaDescription.content = description;
+    
+    
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.name = 'keywords';
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.content = keywords;
     
     
     let canonicalLink = document.querySelector('link[rel="canonical"]');
