@@ -87,6 +87,16 @@ const Gryffindor_Schedule = () => {
             description: " From designing innovative circuits to solving real-world electrical challenges, Ensemble tests both creativity and technical expertise. Whether you're a beginner or a pro, Circuit Design offers a hands-on experience in analog, digital, and embedded systems. Get ready to build, innovate, and compete!",
             link: "" 
         },
+        {
+          id: 9,
+          title: "CODE STUDIO-DRONE WORKSHOP",
+          venue: "AG01",
+          date: "28-30 March 2025",
+          time: "10:00 am -03:00pm",
+          image: "/workshop.webp",
+          description: " Here innovation meets hands-on learning!Dive into the world of cutting-edge technology. Whether you're a beginner or a pro ,our interactive sessions, expert guidance, and real-world applications will fuel your tech journey. Get ready to upskill, network, and create the future!",
+          link: 'https://unstop.com/workshops-webinars/code-studio-workshop-advaita-annual-techno-cultural-fest-international-institute-of-information-techn-1413943' 
+        },
     ];
 
     const eventCardsRef = useRef([]);
