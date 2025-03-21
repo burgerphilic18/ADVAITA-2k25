@@ -37,7 +37,7 @@ const SlytherinSchedule = () => {
             id: 4,
             title: "MANTHAN",
             venue: "MAIN STAGE",
-            date: "27 March 2025",
+            date: "28 March 2025",
             time: "08:00 pm - 09:00 pm",
             image: "/manthan.png" ,
             description: "'Manthan' is a dynamic speaker session designed to spark innovative thinking and meaningful dialogue. Inspired by the mythological Samudra Manthan, where persistent effort led to the emergence of something extraordinary. This session aims to bring together diverse voices from various industries to share their insights, experiences, and visions for the future.",
